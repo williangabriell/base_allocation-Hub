@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>checks if the base field is not duplicated.</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validade Base Duplicity</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    // 1. Evita loop infinito: se o script já validou com o servidor, permite o salvamento direto
+    if (g_scratchpad.is_validated == true) {
+        return true;
+    }
+
+    // 2. Coleta os valores atuais digitados nos campos do formulário
+    var baseId = g_form.getUniqueValue();
+    var baseName = g_form.getValue('name'); 
+    var baseCity = g_form.getValue('city');
+    var baseState = g_form.getValue('state');
+
+    // Se os campos essenciais estiverem vazios, deixa a validação nativa agir primeiro
+    if (!baseName || !baseCity || !baseState) {
+        return true;
+    }
+
+    g_form.clearMessages();
+
+    // 3. Dispara a chamada assíncrona para o Script Include 'BaseValidation'
+    // Nota: Em Scoped Apps, lembre-se de usar o API Name completo se o nome curto for bloqueado
+    var ga = new GlideAjax('BaseValidation'); 
+    ga.addParam('sysparm_name', 'validateBaseDuplicity');
+    ga.addParam('sysparm_base_id', baseId);
+    ga.addParam('sysparm_base_name', baseName);
+    ga.addParam('sysparm_base_city', baseCity);
+    ga.addParam('sysparm_base_state', baseState);
+    
+    ga.getXML(processResponse);
+
+    // 4. Cancela o salvamento inicial para dar tempo de o servidor responder
+    return false;
+
+    // 5. Função de Callback que processa o retorno do servidor
+    function processResponse(response) {
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+
+        g_form.clearMessages();
+
+        if (answer == 'duplicate_name') {
+            // Exibe a mensagem de erro e limpa o campo Nome
+            g_form.addErrorMessage('Unable to save: A base with the name "' + baseName + '" already exists. Please choose a unique name.');
+            g_form.setValue('name', ''); 
+            g_scratchpad.is_validated = false;
+        } 
+        else if (answer == 'duplicate_location') {
+            // Exibe a mensagem de erro e limpa os campos de Localidade
+            g_form.addErrorMessage('Unable to save: A base is already registered for this City and State combination (' + baseCity + ' - ' + baseState + '). Duplicate locations are not allowed.');
+            g_form.setValue('city', '');
+            g_form.setValue('state', '');
+            g_scratchpad.is_validated = false;
+        } 
+        else if (answer == 'ok') {
+            // Validado com sucesso! Define a flag e dispara o salvamento final seguro do formulário
+            g_scratchpad.is_validated = true;
+            
+            if (g_form.isNewRecord()) {
+                g_form.submit();
+            } else {
+                g_form.save();
+            }
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 18:23:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>64cfd58a834d4f5027aba6d0deaad39e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Validade Base Duplicity</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_script_client_64cfd58a834d4f5027aba6d0deaad39e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 19:30:41</sys_updated_on>
+        <table>x_1902784_base_a_0_base_registration</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=693000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>base_allocation__send_confirmation_email</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Base Allocation Record","reference":"x_1902784_base_a_0_base_allocation","reference_display":"Base Allocation","type":"reference","base_type":"reference","usedInstances":{"10e02e44-844f-4567-a973-88853a8a08d0":["record"]},"attributes":{}}]</label_cache>
+        <master_snapshot>3d708e0e83418f5027aba6d0deaad315</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Base Allocation Hub Lifecycle</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>f9708e0e83418f5027aba6d0deaad363</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:32:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dcdd3dc683418f5027aba6d0deaad33c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Base Allocation Hub Lifecycle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_hub_flow_dcdd3dc683418f5027aba6d0deaad33c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:55:15</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1902784_base_a_0_base_allocation">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f9708e0e83418f5027aba6d0deaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:13</sys_updated_on>
+        <table>x_1902784_base_a_0_base_allocation</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>dcdd3dc683418f5027aba6d0deaad33c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:13</sys_created_on>
+        <sys_id>f1708e0e83418f5027aba6d0deaad365</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:13</sys_updated_on>
+        <trigger display_value="">f9708e0e83418f5027aba6d0deaad363</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=dcdd3dc683418f5027aba6d0deaad33c^sys_idNOT INf1708e0e83418f5027aba6d0deaad365"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=dcdd3dc683418f5027aba6d0deaad33c^sys_idNOT INa4dd3dc683418f5027aba6d0deaad341"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>dcdd3dc683418f5027aba6d0deaad33c</id>
+        <name>Base Allocation - Send Confirmation Email</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:32:39</sys_created_on>
+        <sys_id>a4dd3dc683418f5027aba6d0deaad341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:32:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a4dd3dc683418f5027aba6d0deaad341"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=dcdd3dc683418f5027aba6d0deaad33c^sys_idNOT IN6d704e0e83418f5027aba6d0deaad3bb,9d70c28a83418f5027aba6d0deaad3e9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Base Allocation Hub Lifecycle">dcdd3dc683418f5027aba6d0deaad33c</model>
+        <model_id>dcdd3dc683418f5027aba6d0deaad33c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_dcdd3dc683418f5027aba6d0deaad33c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:11</sys_created_on>
+        <sys_id>6d704e0e83418f5027aba6d0deaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6d704e0e83418f5027aba6d0deaad3bb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Base Allocation Hub Lifecycle">dcdd3dc683418f5027aba6d0deaad33c</model>
+        <model_id>dcdd3dc683418f5027aba6d0deaad33c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_dcdd3dc683418f5027aba6d0deaad33c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:11</sys_created_on>
+        <sys_id>9d70c28a83418f5027aba6d0deaad3e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9d70c28a83418f5027aba6d0deaad3e9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=dcdd3dc683418f5027aba6d0deaad33c^sys_idNOT INe5704e0e83418f5027aba6d0deaad3ec"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">dcdd3dc683418f5027aba6d0deaad33c</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:11</sys_created_on>
+        <sys_id>e5704e0e83418f5027aba6d0deaad3ec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:55:15</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACutixnbesk0UDbDeo7W0fglSgRNImSlOuRClxF/n3DnWzrIsvsbJ1XoKIpDiHR2fODP34XefIJVy/1ufI5UTv6UxIEgjE55s1gWGphh2BVmpuhQRG0g82+rUMItLTaeCv5mS15kjCYop4CIN+gEmgX5s9PUY8IrNNeI9hJ3g/2SbbU8+m4fnFMceGNRz1HReFxEGOkf3Due8hyXwBizELIczmj+ydT7BAuykv8JaM44AI/frxqaevUQDBpALyvTLFFBqPemhsEcOzTduyDMMa9U33ynZNC9uIGAZsWGWmgl42ELQ9OnmRRGCCC1Zq3AUE4QfBN8WKJVCf8rRCLyH7F3YfGWodJYDdI+lc8ehkjKTD3tJnHnlYJ2QkIynOdNLn0Up8TfErLglFEZc5lzASAd2YrBVkBSJDRGdL/3maB/zMRHK6bFJRz4snJGXA3EiSUBFOGQfqnZSb0I+CBP30bvIwvXX+vJlPfr2bOtO72Xx6P5nf3eqvybmcfyK1Y4oww+Kkx3ktBPCZEa4+oIhWLqDp6aEXsLW88SSLcw2+9ra6nvgCs0wiFW17+VS4q+389PvEbRit8vZKEXOJ/3X3e13D6eBpur26QggT1KJbl5Z0Wz55AzTZQEL5dPsUnI0cI+G+YfxPIs4s6q0aXvmY8NvtdjpMLhagaibWkVRsPSMhQ0f6DsLYKfGolgKmQ6JOz/Z6UMFBJOAFp/gedR0ntBX8fWEhwH2ELMy5SbaEefol23IaCc2HDwd/NC8KgBqp5b5G71dokTFKZ4QTT5ZEQL+F5affWBgysSihLoImHNRiFuFATFp+pDR2eGbwpy6TuE56XCGzkswnZ7JpUuoSahlDlcemYbvUNIbGAFFsG4ZnlTK5DqYVpaxI4l0y+rR8DhMx8iOkV6U4A2+Us+EoGcW7GsxJUBLJbGPSDTSzI2iWglaxP/sk/ytkmQ7f7qpz39E6rv0IxwjewMfa4JEOSLn/DNb7Bvdzkff3IvAjgat2pPbUmNC2K7SfMv5+7tAJqR+Q/QB2V1ySB25pz4WLxKYD97Op6Y5Jnxhgejb4nTsYj10PWZQOr4bEMivut4XRiO1DuN4BtcVNcm1zwEbhxE16O8H7zgBY88GTAZ7vgJkwG/0vnfsYTve8JMIBqIHDlZfVDG/BGSb5XLfZXgsdb/P73Iyno7E3MIdDbwi3Fsh42icuMvvWAI2HV/ZoUMn4GpR9MGUDMz/kLhNuwgRIixt8S6cu63L+nrINiZSqHJ1epQX0sck7KA1SqpTqs2iJqfiB9tUXv9xv12kzAgUwudB2Va6PQaE+rPa+MFxfLmv9AoT+BOM7oVWf2cLKxV2pKiKJd8969pWK9EeDMbWbLYaOmyxmC6Yd5sW3F0dmSNyaa019xrGCjxvzprUxeIOEKzIpdwx7WpquSDE7J8V6P1Lss9uoPBdb75FvAfuBSljSV5xTx1RM4vi0bN63vgYTGgTRGNWyXxIJ1tyNJpcEKOXQL0NATUU/17XLVaQOpVDwjwWSduC1agbDWtZAXV6hqkih2xswwUM0GNgt/fC4egNuAnQA78WXrZOzIm5Ksr2167R9q3s2Vq+SZHcVcWRd6vTUzcXpvFM3lqdDpz6/8Oy7vzeguNCS8vQfKt2OMlQfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=dcdd3dc683418f5027aba6d0deaad33c^sys_idNOT IN6d704e0e83418f5027aba6d0deaad3ef"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">dcdd3dc683418f5027aba6d0deaad33c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:11</sys_created_on>
+        <sys_id>6d704e0e83418f5027aba6d0deaad3ef</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:55:15</sys_updated_on>
+        <ui_id>10e02e44-844f-4567-a973-88853a8a08d0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/8WWb0/bMBDGv0qV100VJ22T8q4bQkLaQGJsbxCKLvYZLDl/SJxCV/Hdd07S0hRKEWPsXX22z/c851+dq5WjhHPkjEUkxEwyTzLGPOZNmM8ijDDh4TREP3KGTgYp0soSeV4KGi9A1zawWn0tEQyKmI14XZaYmcdHmheqKjQsf3XLKMJvlRY07xxdXQ+dAkrKaLB0jlY7U2ZZYKwhQU0bj3Nep5R0cHpMOd5a7Xr3xbrc3fLtGTQWXfZY2SBN2XrY0MEHg5lAOk2CrnDopJAJMHm53ERItTjP9FPgVmWmVZrCQ6V+U/7At+skkjTeubAZxp1Da3NyxfG8MCrP2oiBRK+dy3WdZmetBOstSqi12fK2rigfFrZmW4QpaypI/rjN7y/W552orFHXVatzDnozAmNKldQGK9uOWl2+ZE8b/vZiY1BjszCFolDZTVyU+UI151H16ehG02AkdX5PZVbqJhsBt1JHZCqMTih+3IR/Qams7u+UhjbbM39m6q7GU9t4wbwwmHncDf1J4I49Dm4SicSFxJeT8XgaTRPmPDYex3e1lde61fkSN9Y2vsbNfaClFS9VYeZUzAI7Nx6HHRURe+2eBf7TtdrK+UTGQ8xmnh9G4zgBag/EXvdDW++bRj/D5AstGMy3F7yPmktb0OCsLeitYnqb94jruOnFOmz8D8Mm8v4PNl1Ff89Nz54+Nr3OfAo1PEkSmeDMZQnn7jjEyI18CF2ceDyQfuB5oTxIzSFWxq9fr60XJMuNkmpzv9e0+KEnJYsgCiiVnBA4kMBUeAIBRBDgQVYG83tQhlwczAvrI74bnk3rNw/OYXHrvWd9dS9r7iAqt87pGApeZ6j9X3/Py1MtK1zYbmIKSsftPdrD1Y6G/YztS9oDD6REbr8PpEIt6DbFzZ5PeMZ6rhOUlO0Zjtu9/nc0Xj5veIUm7gyIbYJY5mUKto2Nll2IxzOGYeBH7mzqE8QYTNyEsHAZQY0IKH3xEU/f9R+Ps4pWEgoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6d704e0e83418f5027aba6d0deaad3ef"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dcdd3dc683418f5027aba6d0deaad33c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:11</sys_created_on>
+        <sys_id>29704e0e83418f5027aba6d0deaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dcdd3dc683418f5027aba6d0deaad33c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:11</sys_created_on>
+        <sys_id>a5704e0e83418f5027aba6d0deaad3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_dcdd3dc683418f5027aba6d0deaad33c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>base_allocation__send_confirmation_email</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Base Allocation Record","reference":"x_1902784_base_a_0_base_allocation","reference_display":"Base Allocation","type":"reference","base_type":"reference","usedInstances":{"10e02e44-844f-4567-a973-88853a8a08d0":["record"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Base Allocation - Send Confirmation Email</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Base Allocation Hub Lifecycle">dcdd3dc683418f5027aba6d0deaad33c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3d708e0e83418f5027aba6d0deaad315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:12</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3d708e0e83418f5027aba6d0deaad315^sys_idNOT IN3d708e0e83418f5027aba6d0deaad317"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3d708e0e83418f5027aba6d0deaad315</id>
+        <name>Base Allocation - Send Confirmation Email</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:12</sys_created_on>
+        <sys_id>3d708e0e83418f5027aba6d0deaad317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3d708e0e83418f5027aba6d0deaad317"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3d708e0e83418f5027aba6d0deaad315^sys_idNOT INbd708e0e83418f5027aba6d0deaad319,bd708e0e83418f5027aba6d0deaad342"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Base Allocation - Send Confirmation Email">3d708e0e83418f5027aba6d0deaad315</model>
+        <model_id>3d708e0e83418f5027aba6d0deaad315</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3d708e0e83418f5027aba6d0deaad315</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:12</sys_created_on>
+        <sys_id>bd708e0e83418f5027aba6d0deaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bd708e0e83418f5027aba6d0deaad319"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Base Allocation - Send Confirmation Email">3d708e0e83418f5027aba6d0deaad315</model>
+        <model_id>3d708e0e83418f5027aba6d0deaad315</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3d708e0e83418f5027aba6d0deaad315</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:12</sys_created_on>
+        <sys_id>bd708e0e83418f5027aba6d0deaad342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bd708e0e83418f5027aba6d0deaad342"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3d708e0e83418f5027aba6d0deaad315^sys_idNOT IN31708e0e83418f5027aba6d0deaad358"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Base Allocation - Send Confirmation Email">3d708e0e83418f5027aba6d0deaad315</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:12</sys_created_on>
+        <sys_id>31708e0e83418f5027aba6d0deaad358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:12</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPXcAFdLFjO29Z24sGSBPU8bYPQVagRNIWSlOuRClxF/n3DnWzrIvji5w6L4s1SXHOHJ45Q+bpp8qQTZh6rc6QzYjaUV0uiM8Rm61XBIaFHLY4Wsq5JeIYCc9fq9fCD0lHpb63nJHliiEBiyliAQx6Pia+eq131AixkDyug1sMO8H38Tbpnmo6Db9fLX2oGf1B17JRQCxkael/GPMcJFyPw2LsBhBm/Wf6zVdYoNwUFzgLl2GfcPX66bmjrpAPwYQE8rM0JSAzaytt5T7Jz5U4HeqgoUE0x9RNw9A0Y9DV7SvT1g1sIqJpsK7MWSkvUUPdhhTyKgjHBOd8VVj1CcIPnK3zFQs4lITBJXoN3H9h94Em11ECWTkkmct/WilXybCz8FyHPKximuKRBGcy6bFwye8T/JJlQlHIRMYyjIRwEJisJGQJIkVEHxfeyzQL+M3lcXbppDwUlv9CQviuHQoSyKOgLoNDsRJuAi/0Y/TTyehhOrb+upmNfptMrenkcTa9Hc0mY/Utzsv6J5Q7JghTLFaSzlsujW8uYfIAebi0AU1HDRzfXYkbR7hRps63zkbxI49jNxVPSfVONhVsqz7LfpfsNa1R+E4hYib+H5M/qupOBo9T9KiIPVb01RVCmKAGRdu0oOgiJzWgRQ09xbx3aTsd2UfcXU37n+Sd2tqx6l56mLDxZjsVJudz0LvLV6GQbL0gLgJLeBbC2CrwKJcCpvfknuT29q62/ZDDB1Z+HlWFx7Tl/N25AcB9gvrMuIm3hHl6l245DbniwcHBP4oT+kCNUDLHo7dLNE8ZpY+EEUcUREC/B8Vfv7tB4PJ5AXUeNOagEjMPB2JSspSS2MGJwZ/bLO8q6VGJzFKZH1/j2enF9a3rlNqEGlpfVreumTbVtb7WQxSbmuYYhfquQmzELkpCOUudH1blQSxRtocgy8Sn4LVijewlrmhbmRkJUjipmYzagaa3BM2Q0EqmaB7kirlYk+HxtmZ3pdbyXQHhCMEXeF9z3NMXKfNewJCP8EQbOX/PfS/kuGxSck/F5cpmhfJLyt+XFv2Rej7ZDWB7xSU544b2TLiIr8/miSbV7SHpEg2s0AQXtHvDoe0gg9L+VZ8YeskTN+BqEX8KL3xHg1GdiJt8sVZOUZ0KD3DEEwBW3PFggKf7YirXWldM5j6H/70sCLcAqm8x6XAVG5wzF5Nsrl0PqISONlXflg/cpUnJ6HQwdHp6v+/04dUDLkC7xEZ61+ihYf/KHPRKLlCBtwu6qGHrQ95CwTqIgTQ4xPdk6rKe/eeUckCEkI3r8H7O4cYbf4OSIIWeKo9FiY3G85V7j/96u1mnPBJolfGDuK3Gvg8KebDKeWHYnlhUbhYQ+iuMb4WWN9IGVi7uSVYSSbSd65meZKQ76A2pWW88dFhnPBuIzeAv/iKyZ91EjRVYdyPZtwyi2mpqvEIcIeySeIp3ix2Xn7ZI0VsnxTgfKebJF66sQhvfoceA/USNLb5tnNLdZExiebRo6WNPgQkFgiguVdK/TxKs2GtFLAhQyuBmDQEVGf1ULy/2liqUXMEfCyS5q1d6HAwr6bXq8tpXSQof8YImuI96PbPh7jwsv6DrYL6TxcU3s4NrJaorvZ0d7bB9y3vW9rSCkLd1sme3ajXr+pZ1Wta1Teu9rE9vR7ve/zUoLrTRPP8HrUBRV/QfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3d708e0e83418f5027aba6d0deaad315^sys_idNOT IN35708e0e83418f5027aba6d0deaad355"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation - Send Confirmation Email">3d708e0e83418f5027aba6d0deaad315</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:12</sys_created_on>
+        <sys_id>35708e0e83418f5027aba6d0deaad355</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:12</sys_updated_on>
+        <ui_id>10e02e44-844f-4567-a973-88853a8a08d0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WW207jMBCGXwXluqnipG1S7lgqJCQWJGD3BqFoYo+pJedA4hS6Fe++4yQ9Uo67rLR39XjGnvlnvrg3C0cJ59AZiEiIsWSeZIx5zBsyn0UYYcLDUYh+5PScDFIkzxJ5Xgpaz0DX1rBYHJcIBkXM+rwuS8zM0xPtC1UVGuY/Ozey8KnSgvadw5vbnlNASScaLJ3Dxc7We1PSkKAm18tlTrs5mnlh1yLndUp5xWppPOsiJ93OwemEdijIpsN6Dj4azARSHhJ0hT0nhUyAycv5ykJFi4tMrw1TlZm20BQeK/WLbg586yeRKuOdCKtl3AnUmuUEDFyZsuamLld65Ypj1WoiUEKtzfGmrXW4KIzKszbEQKKX0bmu0+y8VcRZHbDRj7qiJLCwhdrM6XKqQl5N84fLZZInKmsk6UrUOQe9WoExpUpqY9NZOLW63qd2a96vN2psHFMoCpXdxUWZz1RzH2Wf9u80LfpS5w+UZqXusj5wW2qfOgH9E7JPGvNPKJWt+zsdQ8H2zh+Zuq/x1M6RYF4YjD3uhv4wcAceBzeJROJC4svhYDCKRglznnpONa+ONVTVWjFqVXxf24Jb/Tql4kbsRum4GTgbzEtVmCNKb4adPk+9jq2IvTbIgb+e240z13w9xmzs+WE0iBOghkHsdT+07UbT+mewfSOHg6NNh4+x946Ul+xdNxO3v4QOv2e2s83Yg/N2o4PP/yB87dTuYS/y/iP2urL+HL4trbfZ21L7n6DHkySRCY5dlnDuDkKM3MiH0MWhxwPpB54Xyk+g9xZwg9end+Mxy3KjpFpBskTODz0pWQRRQEfJIdEHCYyEJxBABAG+CdzBcZ5JVaafo+8d+S/pO98uYH9ZHYZrGLYpvNywdxAGr0PYMveZB5A6jTPbSExB6bgdqhfI3KntL1P6UiZb6IKUyO1fG6lQC5q+uIn5ktdUXiGUfHpib7I9bDndxnyrsQQ73fEM8812fh3l189nqkITd7LE9oBY5pYA8moq3P04DMYMw8CP3PHIp48DBkM3IbhcRh8LREDpi695l29/A1jzz3n1CgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=35708e0e83418f5027aba6d0deaad355"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3d708e0e83418f5027aba6d0deaad315</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:12</sys_created_on>
+        <sys_id>71708e0e83418f5027aba6d0deaad33f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3d708e0e83418f5027aba6d0deaad315</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:12</sys_created_on>
+        <sys_id>7d708e0e83418f5027aba6d0deaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3d708e0e83418f5027aba6d0deaad315"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>dcdd3dc683418f5027aba6d0deaad33c</sys_id>
+        <latest_snapshot>3d708e0e83418f5027aba6d0deaad315</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch11-12-16-2025_01-04-2026_2103.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=dcdd3dc683418f5027aba6d0deaad33c^sys_idNOT INfd708e0e83418f5027aba6d0deaad373"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"fd708e0e83418f5027aba6d0deaad373","name":"plan","plan_signature":null}}</plan>
+        <plan_id>dcdd3dc683418f5027aba6d0deaad33c</plan_id>
+        <snapshot>e2a0464e83418f5027aba6d0deaad394</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd708e0e83418f5027aba6d0deaad373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:13</sys_updated_on>
+        <trigger display_value="">f9708e0e83418f5027aba6d0deaad363</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=dcdd3dc683418f5027aba6d0deaad33c"/>
+</record_update>
