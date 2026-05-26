@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Standard corporate user permitted to access the Service Catalog to request workplace allocation and view their personal base registration records.</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>HUUy4xqkJw6deRyYGA33HcXK2iJFiVQBBekmzpMgOXQ=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1902784_base_a_0.user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 13:34:54</sys_created_on>
+        <sys_id>c93ed80a83454f5027aba6d0deaad34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1902784_base_a_0.user</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_user_role_c93ed80a83454f5027aba6d0deaad34e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 13:34:54</sys_updated_on>
+    </sys_user_role>
+</record_update>

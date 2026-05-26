@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1902784_base_a_0_base_allocation">state=4^EQ<item display_value="Closed - Rejected" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Closed - Rejected</label>
+        <name>Closed - Rejected</name>
+        <order>400</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 02:23:37</sys_created_on>
+        <sys_id>292e0b4283c98f5027aba6d0deaad3d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Closed - Rejected</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_process_flow_292e0b4283c98f5027aba6d0deaad3d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-26 02:23:37</sys_updated_on>
+        <table>x_1902784_base_a_0_base_allocation</table>
+    </sys_process_flow>
+</record_update>

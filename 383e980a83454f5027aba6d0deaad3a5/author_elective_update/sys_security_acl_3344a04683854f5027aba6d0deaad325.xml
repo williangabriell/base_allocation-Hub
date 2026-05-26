@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1902784_base_a_0_base_registration</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 14:01:34</sys_created_on>
+        <sys_id>3344a04683854f5027aba6d0deaad325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1902784_base_a_0_base_registration</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_security_acl_3344a04683854f5027aba6d0deaad325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 14:01:34</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</application>
+        <file_path/>
+        <instance_id>acb5df9afbd7dad0843df4344eefdc1d</instance_id>
+        <instance_name>dev292903</instance_name>
+        <name>sys_security_acl_3344a04683854f5027aba6d0deaad325</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Local</local_or_existing><name>x_1902784_base_a_0_base_registration</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-25 14:01:34</sys_created_on><sys_id>3344a04683854f5027aba6d0deaad325</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1902784_base_a_0_base_registration</sys_name><sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package><sys_policy/><sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope><sys_update_name>sys_security_acl_3344a04683854f5027aba6d0deaad325</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-25 14:01:34</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-1492865831</payload_hash>
+        <record_name>x_1902784_base_a_0_base_registration</record_name>
+        <reverted_from/>
+        <source>fc3ed80a83454f5027aba6d0deaad31e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 14:01:34</sys_created_on>
+        <sys_id>3b44a04683854f5027aba6d0deaad32a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e5f70e5e40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 14:01:34</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>3744a046a1854f50b063816fe8ef7f29</update_guid>
+        <update_guid_history>3744a046a1854f50b063816fe8ef7f29:-1492865831</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 16:15:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>083cd8eaa8cb4388839e552bee805040</sys_id>
+        <sys_metadata>3344a04683854f5027aba6d0deaad325</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1902784_base_a_0_base_registration</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_parent display_value="">ba44204683854f5027aba6d0deaad31b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_scope_delete display_value="">18a1bc8c9ca242a683ad5c0b6b372689</sys_scope_delete>
+        <sys_update_name>sys_security_acl_3344a04683854f5027aba6d0deaad325</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_3344a04683854f5027aba6d0deaad325">3b44a04683854f5027aba6d0deaad32a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 16:15:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

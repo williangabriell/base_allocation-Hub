@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1902784_base_a_0.CheckManager</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>To check if the manager is already assigned to another base.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>CheckManager</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CheckManager = Class.create();
+CheckManager.prototype = Object.extendsObject(global.AbstractAjaxProcessor, { // <-- Adicionado o prefixo global. aqui
+
+    getAvailableManagers: function() {
+        // --- PARTE 1: BUSCAR MEMBROS DO GRUPO ---
+        var managerIdsFromGroups = [];
+        var grMembers = new GlideRecord('sys_user_grmember');
+        
+        // Nome exato do seu grupo de gerentes
+        var managerGroupName = 'Base Allocation Managers'; 
+        
+        grMembers.addQuery('group.name', managerGroupName);
+        grMembers.query();
+        
+        while (grMembers.next()) {
+            managerIdsFromGroups.push(grMembers.getValue('user'));
+        }
+        
+        // Se o grupo estiver vazio, impede de quebrar a tela retornando um filtro nulo
+        if (managerIdsFromGroups.length == 0) {
+            return "sys_idINjavascript:null";
+        }
+
+        // --- PARTE 2: BUSCAR GERENTES JÁ ALOCADOS ---
+        var occupiedManagers = [];
+        var grBase = new GlideRecord('x_1902784_base_a_0_base_registration');
+        grBase.addNotNullQuery('manager');
+        grBase.query();
+        
+        while (grBase.next()) {
+            occupiedManagers.push(grBase.getValue('manager'));
+        }
+
+        // --- PARTE 3: MONTAR O FILTRO DA LUPINHA ---
+        var filterString = "active=true^sys_idIN" + managerIdsFromGroups.join(',');
+        
+        if (occupiedManagers.length > 0) {
+            filterString += "^sys_idNOT IN" + occupiedManagers.join(',');
+        }
+        
+        return filterString;
+    },
+
+    type: 'CheckManager'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 17:13:24</sys_created_on>
+        <sys_id>6c5f4d0a83c94f5027aba6d0deaad3b6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>CheckManager</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_script_include_6c5f4d0a83c94f5027aba6d0deaad3b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 17:46:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

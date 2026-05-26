@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Unique Manager</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    // 1. Captura o ID do gerente preenchido no formulário
+    var manager = g_form.getValue('manager');
+    
+    // Se o campo de gerente estiver vazio, deixa o ServiceNow seguir com o fluxo padrão
+    if (manager == '') {
+        return true;
+    }
+
+    // Captura o sys_id da base atual (será vazio se for um novo registro)
+    var baseId = g_form.getUniqueValue();
+    
+    // 2. Instancia o GlideAjax apontando exatamente para o seu Script Include 'CheckManager'
+    var ga = new GlideAjax('CheckManager');
+    ga.addParam('sysparm_name', 'checkDuplicateManager'); // Nome da função dentro do Script Include
+    ga.addParam('sysparm_manager_id', manager);          // Passa o ID do gerente selecionado
+    ga.addParam('sysparm_base_id', baseId);              // Passa o ID da base para o tratamento de Update
+    
+    // 3. Executa a chamada síncrona (trava o envio e aguarda a resposta do servidor)
+    ga.getXMLWait();
+    var answer = ga.getAnswer();
+    
+    // 4. Trata o retorno do servidor
+    if (answer == 'duplicate') {
+        // Exibe a barra vermelha de erro no topo do formulário
+        g_form.addErrorMessage('Operação cancelada: Este usuário já é gerente de outra base cadastrada. Um gerente não pode gerir duas bases diferentes.');
+        
+        // Retornar 'false' é o que impede o formulário de ser salvo e mantém o usuário na tela
+        return false; 
+    }
+    
+    // Se retornar 'ok', permite que o registro seja inserido/atualizado com sucesso
+    return true; 
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 17:14:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a940d5ca83c94f5027aba6d0deaad3c4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Validate Unique Manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_script_client_a940d5ca83c94f5027aba6d0deaad3c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 17:35:51</sys_updated_on>
+        <table>x_1902784_base_a_0_base_registration</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</application>
+        <file_path/>
+        <instance_id>acb5df9afbd7dad0843df4344eefdc1d</instance_id>
+        <instance_name>dev292903</instance_name>
+        <name>sys_script_client_a940d5ca83c94f5027aba6d0deaad3c4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Validate Unique Manager&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    // 1. Captura o ID do gerente preenchido no formulário
+    var manager = g_form.getValue('manager');
+    
+    // Se o campo de gerente estiver vazio, deixa o ServiceNow seguir com o fluxo padrão
+    if (manager == '') {
+        return true;
+    }
+
+    // Captura o sys_id da base atual (será vazio se for um novo registro)
+    var baseId = g_form.getUniqueValue();
+    
+    // 2. Instancia o GlideAjax apontando exatamente para o seu Script Include 'CheckManager'
+    var ga = new GlideAjax('CheckManager');
+    ga.addParam('sysparm_name', 'checkDuplicateManager'); // Nome da função dentro do Script Include
+    ga.addParam('sysparm_manager_id', manager);          // Passa o ID do gerente selecionado
+    ga.addParam('sysparm_base_id', baseId);              // Passa o ID da base para o tratamento de Update
+    
+    // 3. Executa a chamada síncrona (trava o envio e aguarda a resposta do servidor)
+    ga.getXMLWait();
+    var answer = ga.getAnswer();
+    
+    // 4. Trata o retorno do servidor
+    if (answer == 'duplicate') {
+        // Exibe a barra vermelha de erro no topo do formulário
+        g_form.addErrorMessage('Operação cancelada: Este usuário já é gerente de outra base cadastrada. Um gerente não pode gerir duas bases diferentes.');
+        
+        // Retornar 'false' é o que impede o formulário de ser salvo e mantém o usuário na tela
+        return false; 
+    }
+    
+    // Se retornar 'ok', permite que o registro seja inserido/atualizado com sucesso
+    return true; 
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-25 17:14:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a940d5ca83c94f5027aba6d0deaad3c4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validate Unique Manager&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0"&gt;383e980a83454f5027aba6d0deaad3a5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Base Allocation Hub"&gt;383e980a83454f5027aba6d0deaad3a5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_a940d5ca83c94f5027aba6d0deaad3c4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-25 17:35:51&lt;/sys_updated_on&gt;&lt;table&gt;x_1902784_base_a_0_base_registration&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1993054196</payload_hash>
+        <record_name>Validate Unique Manager</record_name>
+        <reverted_from/>
+        <source>fc3ed80a83454f5027aba6d0deaad31e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 17:35:51</sys_created_on>
+        <sys_id>ea55d546830d4f5027aba6d0deaad331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e603511dd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 17:35:51</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>ea55d5462a0d4f50c54d3e384b55aa30</update_guid>
+        <update_guid_history>ea55d5462a0d4f50c54d3e384b55aa30:-1993054196,06809dcac8c94f50eaf49e52863c472c:700800185</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 17:48:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0cc065e526d64f5e812eef857170f6a4</sys_id>
+        <sys_metadata>a940d5ca83c94f5027aba6d0deaad3c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Unique Manager</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_parent display_value="Base Registration">e5d3418283894f5027aba6d0deaad3fb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_scope_delete display_value="">18a1bc8c9ca242a683ad5c0b6b372689</sys_scope_delete>
+        <sys_update_name>sys_script_client_a940d5ca83c94f5027aba6d0deaad3c4</sys_update_name>
+        <sys_update_version display_value="sys_script_client_a940d5ca83c94f5027aba6d0deaad3c4">ea55d546830d4f5027aba6d0deaad331</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 17:48:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

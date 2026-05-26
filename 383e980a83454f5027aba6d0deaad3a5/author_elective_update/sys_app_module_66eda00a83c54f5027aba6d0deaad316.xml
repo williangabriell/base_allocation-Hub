@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Base Allocation Hub">436ce04683c54f5027aba6d0deaad310</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Job Function</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1902784_base_a_0_office_base</name>
+        <order>600</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1902784_base_a_0.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 14:43:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>66eda00a83c54f5027aba6d0deaad316</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Office Base</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_app_module_66eda00a83c54f5027aba6d0deaad316</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 16:09:39</sys_updated_on>
+        <timeline_page/>
+        <title>Office Base</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</application>
+        <file_path/>
+        <instance_id>acb5df9afbd7dad0843df4344eefdc1d</instance_id>
+        <instance_name>dev292903</instance_name>
+        <name>sys_app_module_66eda00a83c54f5027aba6d0deaad316</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Base Allocation Hub">436ce04683c54f5027aba6d0deaad310</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Job Function</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1902784_base_a_0_office_base</name><order>600</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_1902784_base_a_0.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-25 14:43:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>66eda00a83c54f5027aba6d0deaad316</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Office Base</sys_name><sys_overrides/><sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package><sys_policy/><sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope><sys_update_name>sys_app_module_66eda00a83c54f5027aba6d0deaad316</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-25 16:09:39</sys_updated_on><timeline_page/><title>Office Base</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1149483468</payload_hash>
+        <record_name>Office Base</record_name>
+        <reverted_from/>
+        <source>fc3ed80a83454f5027aba6d0deaad31e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 16:09:39</sys_created_on>
+        <sys_id>00a1094e83494f5027aba6d0deaad350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e5fe627600000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 16:09:39</sys_updated_on>
+        <type>Module</type>
+        <update_guid>00a1094e14494f505d7f7f89fa7eda4f</update_guid>
+        <update_guid_history>00a1094e14494f505d7f7f89fa7eda4f:-1149483468,d9f00dca18494f50856cdc6e56e0297b:-878324557,45e04dca8a494f50386d5ef21a0f4cf8:-607165646,73ede00a9ac54f506400ca8294381a5e:-336006735,2aeda00a2cc54f50ec0bafb00b3cf619:-64847824</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Office Base">3fd2cdce83494f5027aba6d0deaad3e4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 16:15:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0152e78e64764a00aaa3811bf7040000</sys_id>
+        <sys_metadata>66eda00a83c54f5027aba6d0deaad316</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Office Base</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_scope_delete display_value="">18a1bc8c9ca242a683ad5c0b6b372689</sys_scope_delete>
+        <sys_update_name>sys_app_module_66eda00a83c54f5027aba6d0deaad316</sys_update_name>
+        <sys_update_version display_value="sys_app_module_66eda00a83c54f5027aba6d0deaad316">00a1094e83494f5027aba6d0deaad350</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 16:15:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
