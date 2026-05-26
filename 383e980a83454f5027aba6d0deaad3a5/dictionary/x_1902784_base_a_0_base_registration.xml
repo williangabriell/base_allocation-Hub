@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e5d3418283894f5027aba6d0deaad3fb" label="Base Registration" max_length="40" name="x_1902784_base_a_0_base_registration" type="collection">
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element attributes="min_value=1" label="Max capacity" max_length="40" name="max_capacity" type="integer"/>
+        <element label="Longitude" max_length="40" name="longitude" type="float"/>
+        <element label="Manager" max_length="32" name="manager" reference="sys_user" reference_qual="javascript:new CheckManager().getAvailableManagers()" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Latitude" max_length="40" name="latitude" type="float"/>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Temperature" max_length="40" name="temperature" type="float"/>
+        <index name="index">
+            <element name="manager"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

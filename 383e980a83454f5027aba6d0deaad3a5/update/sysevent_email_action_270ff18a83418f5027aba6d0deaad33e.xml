@@ -37,13 +37,12 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p data-path-to-node="5,1">Hello, ${opened_by}!</p>
-<p data-path-to-node="5,2">Thank you for submitting your request. We have successfully received your registration details under your employee ID/Registration Number.</p>
-<p data-path-to-node="5,3">Your request has been forwarded to the management team and is currently awaiting approval.</p>
+<p>Thank you for submitting your request. We have successfully received it.</p>
+<p>Your request has been forwarded to the base manager ${manager.name} and will be reviewed.</p>
 <p data-path-to-node="5,4">Request Details:</p>
 <p data-path-to-node="5,5,0,0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;]]>📍<![CDATA[ Operational Base: ${base}</p>
 <p data-path-to-node="5,5,1,0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;]]>💼<![CDATA[ Your Role: ${job_function}</p>
-<p data-path-to-node="5,5,2,0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;⏳ Current Status: ${state} <em data-index-in-node="27" data-path-to-node="5,5,2,0">(Aparecer&aacute; como "Awaiting Approval" ou "Open")</em></p>
-<p data-path-to-node="5,5,2,0">&nbsp;</p>
+<p data-path-to-node="5,5,2,0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
 <p data-path-to-node="5,6">As soon as your manager approves the request, your access permissions will be automatically updated, and you will receive a final confirmation email.</p>
 <p data-path-to-node="5,7">Best regards,</p>
 <p data-path-to-node="5,8">Base Allocation Hub Team</p>]]></message_html>
@@ -60,7 +59,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>We received your request! ⏳ Base Allocation for ${base} is pending approval</subject>
+        <subject>🟡 We received your request! Base Allocation for ${base} is pending approval🟡</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -68,7 +67,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>270ff18a83418f5027aba6d0deaad33e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Base Allocation Awaiting Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
@@ -76,7 +75,7 @@
         <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
         <sys_update_name>sysevent_email_action_270ff18a83418f5027aba6d0deaad33e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-25 20:52:37</sys_updated_on>
+        <sys_updated_on>2026-05-26 14:07:06</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1902784_base_a_0.BaseVagasUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Story 7/ Story 8</description>
+        <mobile_callable>false</mobile_callable>
+        <name>BaseVagasUtil</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BaseVagasUtil = Class.create();
+BaseVagasUtil.prototype = {
+
+    // Story 7 — filters bases with available spots
+    getAvailableBases: function() {
+        var availableBases = [];
+
+        var baseGR = new GlideRecord('x_1902784_base_a_0_base_registration');
+        baseGR.query();
+
+        while (baseGR.next()) {
+            var baseId = baseGR.getUniqueValue();
+            var maxCapacity = parseInt(baseGR.getValue('max_capacity'), 10);
+
+            if (!maxCapacity || maxCapacity <= 0) continue;
+
+            var allocationGR = new GlideAggregate('x_1902784_base_a_0_base_allocation');
+            allocationGR.addQuery('base', baseId);
+            var stateQuery = allocationGR.addQuery('state', '2');
+            stateQuery.addOrCondition('state', '3');
+            allocationGR.addAggregate('COUNT');
+            allocationGR.query();
+
+            var count = 0;
+            if (allocationGR.next()) {
+                count = parseInt(allocationGR.getAggregate('COUNT'), 10);
+            }
+
+            if (count < maxCapacity) {
+                availableBases.push(baseId);
+            }
+        }
+
+        if (availableBases.length === 0) return 'sys_id=NULL';
+
+        return 'sys_idIN' + availableBases.join(',');
+    },
+
+    // Story 8 — blocks user with active registration
+    canRegister: function(userId) {
+        var allocationGR = new GlideRecord('x_1902784_base_a_0_base_allocation');
+        //allocationGR.addQuery('gs.getUserID');
+        allocationGR.addQuery('opened_by', gs.getUserID());
+        var stateQuery = allocationGR.addQuery('state', '1');
+        stateQuery.addOrCondition('state', '2');
+        stateQuery.addOrCondition('state', '3');
+        allocationGR.query();
+
+        if (allocationGR.next()) return 'sys_id=NULL';
+
+        return this.getAvailableBases();
+    },
+
+    type: 'BaseVagasUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 18:17:25</sys_created_on>
+        <sys_id>a83fd6128305039027aba6d0deaad3d0</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>BaseVagasUtil</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_script_include_a83fd6128305039027aba6d0deaad3d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-26 19:16:16</sys_updated_on>
+    </sys_script_include>
+</record_update>

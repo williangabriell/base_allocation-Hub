@@ -25,17 +25,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2396c10a83894f5027aba6d0deaad351</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Base Registrations</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Bases</sys_name>
         <sys_overrides/>
         <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
         <sys_update_name>sys_app_module_2396c10a83894f5027aba6d0deaad351</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-25 19:52:00</sys_updated_on>
+        <sys_updated_on>2026-05-26 02:35:57</sys_updated_on>
         <timeline_page/>
-        <title>Base Registrations</title>
+        <title>Bases</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
