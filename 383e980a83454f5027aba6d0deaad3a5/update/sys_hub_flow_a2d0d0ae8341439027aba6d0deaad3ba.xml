@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,timeFromCreateToActivate=41096000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>dcdd3dc683418f5027aba6d0deaad33c</copied_from>
+        <copied_from_name>Base Allocation Hub Lifecycle</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>copy_of_base_allocation_hub_lifecycle</internal_name>
+        <label_cache>[{"name":"Created_1.current.opened_by.user_name","label":"Trigger - Record Created➛Base Allocation Record➛Opened by➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{"56d141d1-db00-4ca5-a794-9e36272aacac":["condition"]}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Base Allocation Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_1902784_base_a_0_base_allocation","column_name":"sys_created_by","usedInstances":{"56d141d1-db00-4ca5-a794-9e36272aacac":["condition"]}},{"name":"98f410a3-23ca-413e-8185-7ad7b076c994.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"74c717c6-94d6-4c09-b789-7aa8ea31e4f3":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.manager","label":"Trigger - Record Created➛Base Allocation Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1902784_base_a_0_base_allocation","column_name":"manager","usedInstances":{"98f410a3-23ca-413e-8185-7ad7b076c994":["approval_conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Base Allocation Record","reference":"x_1902784_base_a_0_base_allocation","reference_display":"Base Allocation","type":"reference","base_type":"reference","usedInstances":{"10e02e44-844f-4567-a973-88853a8a08d0":["record"],"98f410a3-23ca-413e-8185-7ad7b076c994":["record"],"0529fd55-a564-481e-a898-bf1ddae3f0cc":["record"],"89abdcc6-2be1-44d2-b4b8-5853c466d03d":["record"],"aa55d073-fe05-43a3-ba48-0d82d54ef412":["record"],"a6e4f0e0-1899-4e8c-9a68-5979be8a730d":["record"],"87f68745-2b2d-46e9-b6e8-90890f7c871d":["record"],"0638b12b-4b6c-47fe-b4d3-2edbd25043e9":["record"],"b4d388db-de2f-4ec2-af35-f9b4e599061d":["conditions"],"50113336-4f8d-466e-b2bf-94ab03cc3e56":["record"]},"attributes":{}},{"name":"Created_1.current.opened_by","label":"Trigger - Record Created➛Base Allocation Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1902784_base_a_0_base_allocation","column_name":"opened_by","usedInstances":{"ba270e07-5103-4ab7-abf9-7c86b1ce9d90":["record","ah_to"]}}]</label_cache>
+        <master_snapshot>030258228381439027aba6d0deaad34c</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Base Allocation Hub Lifecycle</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>f9708e0e83418f5027aba6d0deaad363</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a2d0d0ae8341439027aba6d0deaad3ba</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Base Allocation Hub Lifecycle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_hub_flow_a2d0d0ae8341439027aba6d0deaad3ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:30</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1902784_base_a_0_base_allocation">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 20:44:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f9708e0e83418f5027aba6d0deaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 20:44:13</sys_updated_on>
+        <table>x_1902784_base_a_0_base_allocation</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>a2d0d0ae8341439027aba6d0deaad3ba</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 13:18:30</sys_created_on>
+        <sys_id>60ada22e8305839027aba6d0deaad36b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:30</sys_updated_on>
+        <trigger display_value="">f9708e0e83418f5027aba6d0deaad363</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a2d0d0ae8341439027aba6d0deaad3ba^sys_idNOT IN60ada22e8305839027aba6d0deaad36b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a2d0d0ae8341439027aba6d0deaad3ba^sys_idNOT INaad0d0ae8341439027aba6d0deaad3be"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a2d0d0ae8341439027aba6d0deaad3ba</id>
+        <name>Copy of Base Allocation Hub Lifecycle</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:31</sys_created_on>
+        <sys_id>aad0d0ae8341439027aba6d0deaad3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 01:53:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=aad0d0ae8341439027aba6d0deaad3be"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a2d0d0ae8341439027aba6d0deaad3ba^sys_idNOT IN6ed0d0ae8341439027aba6d0deaad3c9,a2d0d0ae8341439027aba6d0deaad3d2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</model>
+        <model_id>a2d0d0ae8341439027aba6d0deaad3ba</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a2d0d0ae8341439027aba6d0deaad3ba</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:31</sys_created_on>
+        <sys_id>6ed0d0ae8341439027aba6d0deaad3c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 01:58:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6ed0d0ae8341439027aba6d0deaad3c9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</model>
+        <model_id>a2d0d0ae8341439027aba6d0deaad3ba</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a2d0d0ae8341439027aba6d0deaad3ba</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:31</sys_created_on>
+        <sys_id>a2d0d0ae8341439027aba6d0deaad3d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 01:58:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a2d0d0ae8341439027aba6d0deaad3d2"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=a2d0d0ae8341439027aba6d0deaad3ba^sys_idNOT IN3ad014ae8341439027aba6d0deaad344"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>3ad014ae8341439027aba6d0deaad344</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:16:20</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACutixnbesk0UDbDeo7W0fglSgRNIWSpOuRClxF/n3DnWzrIsvsbJ1XoKIpDiHR2fODP34XWfIJUy/1ufIZUTv6T6XJOCIzTdrAsNSDTscrdTcCnGMpAg2+rUMItLTaSBWc7JaMyRhMUUshEERYBLo12ZPjxGLyGwT3mPYCd5Ptsn21LNpeH5xzLFhDUd9x0UhcZBjZP8wJjwkfcFhMfZDCLP5I3vnEyzQbsoLvKXPcEC4fv341NPXKIBgUgH5XpnyFRqPemhsEcOzTduyDMMa9U33ynZNC9uIGAZsWGWmgl42ELQ9OnmRhGOCC1Zq3AUE4QfONsWKJVCf8rRCL6H/L+w+MtQ6SgC7R9K54tHJGEmHvaXwPfKwTshIRlKc6aRg0Yp/TfErLglFEZM5lzASAd2YrBVkBSJDRGdL8TzNA372eXK6bFJRz4onJGXgu5EkoSKc+gyod1JuQhEFCfrp3eRheuv8eTOf/Ho3daZ3s/n0fjK/u9Vfk3M5/0RqxxRhhsVJj/NaCOCzT5j6gDxauYCmp4de4K/ljSf9ONfga2+r64ng2M8kUtG2l0+Fu9rOT79P3IbRKm+vFDGX+F93v9c1nA6epturK4QwQS26dWlJt+WTN0CTDSSUT7dPwdnIMRLuG8b/JOLMot6q4ZXAhN1ut9NhcrEAVft8HUnF1jPiMnSkcBDGTolHtRQwHRJ1era6sg9rOog4bOEUX6iu7ITIgtEvfggHeIS8zNlKtoR5+iXbchpxTcCnhD+aFwVAltRyp6P3K7TIOKYzwognS7Kg38Ly029+GPp8UUJdBE1YqcUswoG8tPxIaezwzOBPXaZ1nfS4QmYlvU/ObdOk1CXUMoYqs03DdqlpDI0Botg2DM8q5XYdTCtKWZHEu+T4aRkeJmJkR0ivSnEG3ihnw1Eyinc1mJOgJJIZyaQbaGZH0CwFrWKI9kmOWMgyHb7dVee+o3XcDSAcI3gDH2uMasERDkiZeAYzfoP7ucj7exGIiOOqHak9NZ9r2xXaTxl/P3fohFQEZD+A3RWX5IFb2nPhIr7pwP1sarpj0icGmJ4NfucOxmPXQxalw6shscyK+21hNGL7EK53QG1xk1zbHLBROHGT3k7wvjMA1nzwZIDnO2AmzEb/S+c+htM9Lwl3AGrgMOVlNcNbMB+TfK7bbK+Fjrf5fW7G09HYG5jDoTeEewxkPO0TF5l9a4DGwyt7NKhkfA3KPpiygZkfcrsJN2ECpMUNvqVTl3Vdf0/ZhkRKVY5Or9Ic+tjkHZQGKVVK9Vm0xFREoH0V/Jf77TptRqAAJlfcrsr1MSjUh9XeF4Yr5LLWL0DoTzC+E1r1mS2sXNyVqiKSePesZ1+pSH80GFO72WLouMlitmDaYV58e3FkhsStudbUZxwr+Lgxb1obgzdIuCKTcsewp6XpihSzc1Ks9yPFPruNynOx9R75FrAfqIQlfcU5dUzFJI6gZfO+FRpMaBBE86mW/bZIsOZuNLkkQCmDfhkCair6ua5driJ1KIWCfyyQtAOvVTMY1rIG6vIKVUUK3d6ACR6iwcBu6YfH1RtwE6ADeC++bJ2cFXFTku2tXaftW92zsXqVJLuriCPrUqenbi5O5526sTwdOvX5hWff/b0BxYWWlKf/APubGyxmHwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=a2d0d0ae8341439027aba6d0deaad3ba^sys_idNOT IN3ed014ae8341439027aba6d0deaad32c,5b06d6aa8341839027aba6d0deaad3ad,72d014ae8341439027aba6d0deaad331,72d014ae8341439027aba6d0deaad333,76d014ae8341439027aba6d0deaad335,7ed014ae8341439027aba6d0deaad32e,b2d014ae8341439027aba6d0deaad334,bad014ae8341439027aba6d0deaad329,bed014ae8341439027aba6d0deaad32f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>3ed014ae8341439027aba6d0deaad32c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:38:48</sys_updated_on>
+        <ui_id>0529fd55-a564-481e-a898-bf1ddae3f0cc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeR1FOVBGWDXgpBG6rRSO2LTqSInvgFLzmNsh8Ig/n2uEydEUHWo1A0aVvi+fM7JucnLnnBGpmQIzPMn/igJ/TAMPC8YD/14FMZ+wEIK4BOH5DQDrJSQFJLheUNFZQL7/UwC1cAi300qKSHXhwPmGVeloLulLcNIsuaCYZ5MX14dUlKJEzVIMt2fpC6FJGgMAkufWkynGPWuNGdWJFWGuCLeBu9t59xmBt/nmMEmA8f3HAJbDTkDBJJSocAhGc0Z1YXckamWFQaQNHvMxa6rWPNcN0QzulX8D9489ExdCsgssSJ0x8gK1ITTOdX0GScnupKdXgVPQDWaMEhpJfSsH2sKHkvNi7xp0TQWbXchqix/aBQh3YDe86gUgoDS8DTIG1rp87p4e2pBLnheS2IpiiKhojtRrSWPK23g7AkIqDXOaFnyfBWVstjwuhmhZO5K4MFNRfGGdyq+yl2aGNwuqkrdBcbndXhJJTckfuAYbD44RO3UTFCljlRQw+h3ZZA0xCyFqFahliCqnWCaE8lLfYtXbcACPzjW9PHNRw5LJkdD9WYejb+N/IkXfBsPo5iikjTy7B9hZKqfydkW3GHB4LZf8LmluAByuxQ/ayu8T8HuxVnsvt87eGgSdituvmwrxte0FZbG1a/Fv5bBCz583facVPtf9RZBaXz9/6o8L2TBueVPsp/z+wWoWr8vOAim3oHZmh0yhKUhamCfGN4mB0ub7D4FX+Z6f+TVvyvy/n/zRXj9C9N8e44ICQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3ed014ae8341439027aba6d0deaad32c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>56d141d1-db00-4ca5-a794-9e36272aacac</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 11:35:29</sys_created_on>
+        <sys_id>5b06d6aa8341839027aba6d0deaad3ad</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:38:48</sys_updated_on>
+        <ui_id>50113336-4f8d-466e-b2bf-94ab03cc3e56</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPEUoIZcBbC0Ka1LVSO/HSVdGN7YAl52O2Q2GI/77rxAkRVB2V+oLGE75fPufk3ORlTwQjUzLkzA8mwYiGQRgOfH8wHgbxKIyDAQuB84B4JIOUY6XiNFcMzxuQpQ3s9zPFwXAWBX1aKsUzczhgngldSNgtXRlG6FpIhnkyfXn1SAEKJxquyHR/kroUkoSYSyx9ajCdYjS7wp5ZTssUcUWiCd67zrnL9L7PMYNNFk7ge4RvDc8YRyAJSM09kkLGwORqR6ZGlRhA0uwxk7u2Yi0yUxNNYavFH7x56Nu6hCMz6kRoj5ETqA4nczDwjJOpKVWrVy4o17UmjCdQSjPrxuqCx8KIPKtbDMSy6c5lmWYPtSKkHdB5HqVGELywPC3ymlbyvM7fnhqQC5FVkjiKMqcg2xMYo0RcGgtnT7jklcYpFIXIVlGh8o2omhFK2l9JPPQTmb/hnVqssj5Qi7uPqkJ/gfF5FV6CEpbEDxyDzQeP6J2eSdD6SAU1jH6XFklNzFGIKhUqCaLKCbaZKlGYW7xqwx3wg+dMH9985DA6ORqqM/No/G0UTPzBt/EwigGVhMh3f6SVqXomZ1twhwW9227B55biAsjNUvysrPA+BbcXZ7H7bm/voU64rbj5sq0YX9NWOBpXvxb/WgZ/8OHrtuOkyv+6swja4Ov/V+n7IQvPLX+S/ZzfL0DV+H0huGT6HZiN2XmKsAyPatgnhnfJ3tIl20/Bl7k+GPnV74q8/998EV7/ArkbP/oICQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5b06d6aa8341839027aba6d0deaad3ad"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>74c717c6-94d6-4c09-b789-7aa8ea31e4f3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>72d014ae8341439027aba6d0deaad331</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:38:49</sys_updated_on>
+        <ui_id>a6e4f0e0-1899-4e8c-9a68-5979be8a730d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WW207jMBCGXwXluqmcQ5uUOxaEhMSCBOzeIBRN7DFYcg4kToGtePcdJ+m5HHdZae/q8emff+aLez1zlHD2nVDEQkykx6TnecxjI8/3Yowx5dE4Qj92Bk4OGdLKCnlRCRpPQTc2MJsdVggGReINeVNVmJvnZ5oXqi41PP3sl1GE3yktaN7Zv74ZOCVUdKLBytmfbUy9V5KGFDUtvZhr2tRonko7FgVvMtKVqHnwtN951M/snRzRDG2ycryBg48Gc4GkQ4KuceBkkAswRfW0iFDS4jzXy8Cdyk2XaAaPtfpFNwe+XSeRMuO9CYth0hvUheURGLg0VcNNUy38KhTHuvNEoIRGm8PVWLfgvDSqyLstBlI9313oJsvPOkecxQEr9WhqEoGlTdQqp8spC3l5VzxczEUeq7y1pE9RFxz0YgTGVCptjJUzcxp1tcvtLrzbb9TYLsygLFV+m5RVMVXtfaQ+G95qGgylLh5IZq1u8yFwm+qQKgHDY4ofteGfUCmb93c6hjbbO3/k6r7BE9tHwmNRMGHcjfxR4IaMg5vGInUh9eUoDMfxOPWc54FTP9WHGup66RiVKrlvbMKdf71TSWt263TSNpzdzCtVmgOSN8Xen+dBz1bsvdbIgb/s25Uzl3w9Jt6E+VEcJilQwSBh/Q9tq9GWfgu2b7Rg72B1wcfYe4fkOXtXbcftTqHHbyt2urp376yb6OHzPwhf17U72IvZf8Ren9afw7fm9Tp7a27/E/R4mqYyxYnrpZy7YYSxG/sQuThiPJB+wFgkP4HeW8CFr3fvymOWF0ZJtYBkjhxnyFjAIA7CSSxHRB+kMBZMIIAIJsGbwO0dlNZQFB9/9d7WPifvbF387pR6BJcgrBN4sRLvAQxeB7Dj7TOPH1UZp7aImIHSSddQL1C5kdtfJvQlJWvYgpTI7d8aqVAL6ryk3fMlL6m8RKj43bG9ydawY3Qd8bXCEuh0xxbiq+X8OsKvtnuqRpP0tiT2gEQWVQa2I9oMNz8M4cTDKPBjdzL26cOAwchNRRC4Hn0oEAGlL77mTb75De5evLnxCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=72d014ae8341439027aba6d0deaad331"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>f19159d3-d71f-499f-bd1b-7c7ee0561273</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>72d014ae8341439027aba6d0deaad333</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:38:49</sys_updated_on>
+        <ui_id>b4d388db-de2f-4ec2-af35-f9b4e599061d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgo0G2AJttLt0tQJBVzlyZVkkqaGP7vHYqUbdiKbaEOkGBv5nBIvpl5b0j52zLmNL6M6TSZ5tPpcDJOkn4/SUajPsFplvVHJEsyPIg7scQLBp4WZ4LB8AGL0o3Nk8FFoRWMkf/BNExTbgqBn74Grw/BBWbInAuqmYwvv33vxAXWsK+FNZfLnalTgQmcMQGudwHZDlD7VKyHqJrztk/by6LPfkJp6qAknZj9tExSBhhyLAzrxAssKbZKP60tmmF6I8XGMOfSwo6xc/5p+DOcO0mcX84gKsL83HqIQpK8Ob/GFt9aXRJb6uBK5ooTZnw+KMtxKezVts073BSWK+mX+LD9aiXKhfzs0xGvN6hrApbSAAhWuEAd8hBGfjtXj19qlDMuq5yESaEIlLEeYWs1z0rr8CxjJtgCNkILIAKX98jVnFeLAcuiey9g0M2FeoRDDb+XXUwc8C7kFXdnYL+uzF+x5i6KP2Gbikw5F8AQ5EtoVKmrVD4gIkpTTWgsjd8rXnUcJa8ENmYTOaQc/Sgdbp+HEDHySXNLiOaF/QBbPLAQ3KpTa2N4kILTDeWIkpQ7FKZZIH+XsANdLq+AOZZRlHZJqSHJdrX6x1gweQfN/mUE5vdl9Ft7tRTe8ahr4V1th92UiiDBPdunpg2CBNOzSXCQJO9JhHD429Nge1X5FByRVkoPkoxu+GSUtsjncktb+wppzfMTINQ8v3HMjLKnl1AFmuecCdp008zcxM5N0/t/3jRvkuQAiCJfPS4Fl9WzAYC+FvuHB6mXpTs8q+i1da84GzZkXwM4sip6bq2EE+DUSriFs6M7j6cBYt3vK8rs9vraGATQP5sA+r3zCGC5DnOdyIac1y9FV83a/9n5411/oODWgnTVJLBWZ6Ztz+yt9gXcb6XgbbL5mesXOHfmJ+ULiuy8ZguYw9JwHvL6RY+c3jO7Ob32oso+YvFf03xgHKoLVYX3Cs/T9OAXUrb1POU5WkDleAGvaM0IkMMgrBnKVSkpCu/nDZFcJXOujQ3O+43mCwP9yEiBMCM7Z1HlHa29W17Ex+OoU/kxj+pAwmkmgkCiKpBoHUi7sNs0rcEZH6fnblozzEVVDfg0KrbKybRW+oXGdaSQBxhxYlc7EVR6VlC/3/aaJNDY/o5gfRff2edvTYThbNDDo3E/TZMkTeg4mYzH6WSU5SM8HuQbjSJkJIFuCjvnQBXYHtXUqOuc7Pcf31LbNpoTUNUUvFbSfUb3xjZysKC+UQ3rOPDQUDKlBMNyp6PcwT3xxyzgD3wdvrmu8i7+dSr53W6mvakx16/1bij5X5L/KNlHR7EJS3qTlJKLyTgdXwxyOrqYUjy8wNNsOO5TRgb5OZ8C338BGKjjIscVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=72d014ae8341439027aba6d0deaad333"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>f19159d3-d71f-499f-bd1b-7c7ee0561273</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>76d014ae8341439027aba6d0deaad335</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:38:49</sys_updated_on>
+        <ui_id>0638b12b-4b6c-47fe-b4d3-2edbd25043e9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WW207jMBCGXwXluqlyapNyx4KQkFiQgN0bhKKxPQZLzoHEKbAV777jJD2X4y4r7V09Pv3zz3xxr2eOEs6+E4lEiIn0Pen7vud7Iz/wE0yQ8XgcY5A4AyeHDGllhbyoBI2noBsbmM0OKwSDIvWHvKkqzM3zM80LVZcann72yyjC75QWNO/sX98MnBIqOtFg5ezPNqbeK0kDQ01LL+aaNjWap9KORcGbjHSlah487Xce9TN7J0c0Q5usHH/g4KPBXCDpkKBrHDgZ5AJMUT0tIpS0OM/1MnCnctMlmsFjrX7RzWFg10mkzHhvwmKY9gZ1YXkEBi5N1XDTVAu/CsWx7jwRKKHR5nA11i04L40q8m6LAabnuwvdZPlZ54izOGClHk1NIrC0iVrldDllIS/vioeLuchjlbeW9CnqgoNejMCYSrHGWDkzp1FXu9zuwrv9Ro3twgzKUuW3aVkVU9XeR+qz4a2mwVDq4oFk1uo2HwK3qQ6pEjA8pvhRG/4JlbJ5f6djaLO980eu7hs8sX0kfC8OJx5342AUupHHwWWJYC6wQI6iaJyMme88D5z6qT7UUNdLx6hU6X1jE+78651KW7Nbp9O24exmXqnSHJC8Kfb+PA96thL/tUYOg2Xfrpy55Osx9SdeECdRyoAKBqnX/9C2Gm3pt2D7Rgv2DlYXfIy9d0ies3fVdtzuFHr8tmKnq3v3zrqJHr7gg/B1XbuDvcT7j9jr0/pz+Na8Xmdvze1/gh5njEmGE9dnnLtRjImbBBC7OPJ4KIPQ82L5CfTeAi56vXtXHrO8MEqqBSRz5OIwDhKWQBJGk0SOiD5gMBaeQAARjsI3gdu7QGsoio+/em9rn5N3ti5+d0o9gksQ1gm8WIn3AIavA9jx9pnHj6qMU1tEzEDptGuoF6jcyO0vE/qSkjVsQUrk9m+NVKgFdV7a7vmSl1ReIlT87tjeZGvYMbqO+FphCXS6Ywvx1XJ+HeFX2z1Vo0l7W1J7QCqLKgPbEW2Gmx+GaOJjHAaJOxkH9GHAcOQyEYauTx8KREAZiK95k29+A0R4z1DxCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=76d014ae8341439027aba6d0deaad335"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>7ed014ae8341439027aba6d0deaad32e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:38:49</sys_updated_on>
+        <ui_id>98f410a3-23ca-413e-8185-7ad7b076c994</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YXXPaOBT9K4yeCStjbAxv2TCZ6c5uO5OkfQkZjyzJoB1hu5adhmX4772W5I9CQmFLH9L0JRNd3Sufe3yOZHG/QYKhKRoH8ZBPJkMcORi7GAcexYHLI3fsj11CMeqjhKw4ZOacpjmD8SORZRXYbK5yTgrOQmdAyzznSbHdwjwTKpNk/cmmQYQuhWQwj6b3D32UkRxWLHiOppudqWMhSRJxCak3NaZdjMU6q8YspeUKcIWiDv5tK2d2pvduBjNQVMHBfcSfCp4wDjhiIhXvoxVJGCnSfI2mRV5CAHpmHxK5bjKWIilMnyvypMR/8GB3WOXFHBqjloNmGFp+TDiekYLcwsq0KPOGrlRQrgwljMeklMVVN2YSPmSFSBNTUpBI1tWpLFfJe0MIahbovI5SAQieVX1WyE1b8e0y/XJTg7wWiWbEtihTSmQzIkWRi6gsKjgbxCXXFK9IlolkEWZ5+ih0MUBZDRYSBoNYpl/gmUoskgGhFe4BsEoG1xCf6fAnkouqiX9gGSje9pFaqytJlGpbAQ7Dz2WFxDRmWwg1C4aCqo7mIisu4SmP3GLe9q3cI3pQW7SVklmuVftT6EzwcByMwogAfyTE9h9ZkaPfxJ70/4SE3mU34TQnHIG2dsKdhbuD3vpAD0M9960NdFnvvZmwLnAOu8BGWhsY/TzjggC/IhfYtl69Db7nAD7yXQ/+jGMXO0MHB9wPAjrBhAa+743cVkOAAHogMoRXrbR6H1v2fnSTPwJGLe1Li6N3U+N4EaCVu4IXkyx2pH5bB63MhyfK/OXd3vHfktBLcbfDsons8fxzHFE97mMiPpf8XaUjfxj5ExywCxbj6GIUuN4FoRxfcN/xuMd86jnuT3ARdg7tzCx4RqSx4LL7+VRP7JupM3OaqY5AtWeqawvrJbjWUnr43Ami63dOkPNZK8D4NXnrLX1K0YNi452D5N+0zJMDDgiXQmllvOiETsZpjjgCZO2IvwzKXUPsgv8/fnB/++HX98PIOyi1zsd5o2qaJkxUiFXHFWZn5uoyWX+8f+aOPQDlkAXPt9uHfcOcVnyal45osLmXl5Kr7zVsndR+xdmirpvabz87aR01OtdN/ZUZ6q3cUuhBrcWTVlusBIJA5N0fpubIwJ6j6RwlacLnqD9HVVZYiUuHIQPANRM6ttlstyZS5sQu4HSGbTUja6UzFV1yBtrU0W8ioTaDjZ/jd7EjOKn9Nyt5b2ZI2aepviTVOA0vYu8ku7UJeqU/7kT3RPPOdqKNftvvHFeisLk0wHEFu98ZPfnwFbIfzcQsFgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7ed014ae8341439027aba6d0deaad32e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>f19159d3-d71f-499f-bd1b-7c7ee0561273</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>b2d014ae8341439027aba6d0deaad334</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:38:49</sys_updated_on>
+        <ui_id>aa55d073-fe05-43a3-ba48-0d82d54ef412</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWXU/bMBT9K5GfmNRFSVsYdE+MDmkTAwkmXiiznNhpvTl2ZjuFUuW/7zp22qplDCRe0PrS+n7lnJN7kt4sEadohIaMJulRepAP0sGgnyT9w2GaHQyytE8HhLEU9ZAkJYNKzXKlKZznRNQusFyeaEYsoziN81prJm3TQJ5yUwmyuA5lEMlnXFDIo9HNbQ9VRMNEyzQaLbdSz4UkSMYElF52mLYx2kXlzlTldQm4MO+CZ6FzHDLRlzFkoMnBSZMeYveWScoASEGEYT1UEkmJVXqBRlbXEADS9EKKxapixqX1REtyb/gDXHmYuLqCAbM8iLA64iCQDxdjYskVTM5trVd6KZ4z4zWhrCC1sCebMV9wUVmupG+xJBNdtxJ1Kc+9Img1YON+1AZAsMrxdMg9reJqpu4uO5CnXLaSBIpC5USsTsRazbPaOjhLxARrNS5JVXE5xZVWc942A5Qyngo4xIVQd3BNw6cyJrnDHYOqJD6F+LgNXxPNHYlvMAaamx4yC3MiiDFrKqAh/l07JJ5YoIBbFVoJcLsJrjnXvLLHcKk5C8CbXlj6bP+pDcuP1gu1MXO9+Pc4PUr6Hw6HOCOgJMFJ+CGcTO092XHBJyiIjjcLXmaKZ0DuTPG9XYXHKQRf7MTONnujc58Irth/NVccviVXBBpv3hb/MkPSf/Jxu7FJ7f6bDSMYC4//SZ0kAzr8oZljSASGTTBK+nBB3/trM7rriZe2v8wxz+DVOeaUM0HNI0Q7u7AScFuGPfEty4RkdB2Sq5fJq/kmPUjazxtyz3/wTvEUfcxh3tpgF3qqAbZMR1s9kV/7qKC4ZYLTFGOh1C9cV9j/uYnDF8jgFDLxlNmvqtaSiM/S6sVe+u7jRE/kXyZvhWPYGm73JmgykRP0aGdsZrywe10ONkruTPmpuFwPARkNmTO62o6maW7/AHq8OHNxCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b2d014ae8341439027aba6d0deaad334"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>bad014ae8341439027aba6d0deaad329</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:38:48</sys_updated_on>
+        <ui_id>10e02e44-844f-4567-a973-88853a8a08d0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WW227bMAyGXyXwdRxYdhI7vcsaFCjQtUDb7aYoDFqiGgHyobbcw4K++yjbOTXpceuA3UUUKZE/+Vm5WjhKOAfOUERCTCTzJGPMY96I+SzCCBMejkP0I6fvZJAieZbI81LQ+g50bQ2LxWGJYFDEbMDrssTMPD3RvlBVoeHxZ+dGFj5XWtC+c3B13XcKKOlEg6VzsHi29d6UNCSoyfV8mdPzHM1jYdci53VKecVqaTzpImfdTu94RjsUZNNhfQcfDGYCKQ8JusK+k0ImwOTl48pCRYuzTK8Nc5WZttAUHir1i24OfOsnkSrjnQirZdwJ1JrlDAxcmLLmpi5XeuWKY9VqIlBCrc3hpq11OCuMyrM2xECil9G5rtPstFXEWR2w0Y+6oiSwsIXazOlyqkJezPP782WSRyprJOlK1DkHvVqBMaVKamPTWTi1utyndmverzdqbBxTKAqV3cRFmd+p5j7KPh3caFoMpM7vKc1K3WQD4LbUAXUCBkdknzXmn1AqW/d3OoaC7Z0/MnVb47GdI8G8MJh43A39UeAOPQ5uEonEhcSXo+FwHI0T5jz1neqxOtRQVWvFqFXxbW0LbvXrlIobsRul42bgbDAvVWGmlN4ddvo89Tu2IvbaIAf+em43zlzz9RCzieeH0TBOgBoGsdf90LYbTet3YPtGDr3ppsPH2HtHykv2LpuJ219Ch9+O7WQztnfabnTw+R+Er53aPexF3n/EXlfWn8O3pfU2e1tq/xP0eJIkMsGJyxLO3WGIkRv5ELo48ngg/cDzQvkJ9N4Cbvj69G48ZllulFQrSJbI+aEnJYsgCugoOSL6IIGx8AQCiCDAN4HrTe9BGdK1Ny2ssvjx1+/tGpYEnm4Xsb+0DsU1ENsknm/YOxCD10FsufvMI0jdxjvbTExB6bgdrBfofFbbXyb1pUy28AUpkdu/N1KhFjSBcRPzJS+qvEAo+fzI3mR72LK6jfpWYwl4umMH9c12fh3pl7szVaGJO1lie0As8zIFOxFNhc8/EMMJwzDwI3cy9ukDgcHITQgwl9EHAxFQ+uJr3ubr31oz0Ir5CgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bad014ae8341439027aba6d0deaad329"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>74c717c6-94d6-4c09-b789-7aa8ea31e4f3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>bed014ae8341439027aba6d0deaad32f</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:38:49</sys_updated_on>
+        <ui_id>89abdcc6-2be1-44d2-b4b8-5853c466d03d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPEUoIZcBbC0Ka1LVSO/HSVdGN7YAl52O2Q2GI/77rxAkRVB2V+oLGE75fPufk3ORlTwQjUzLkzA8mwYiGQRgOfH8wHgbxKIyDAQuB84B4JIOUY6XiNFcMzxuQpQ3s9zPFwXAWBX1aKsUzczhgngldSNgtXRlG6FpIhnkyfXn1SAEKJxquyHR/kroUkoSYSyx9ajCdYjS7wp5ZTssUcUWiCd67zrnL9L7PMYNNFk7ge4RvDc8YRyAJSM09kkLGwORqR6ZGlRhA0uwxk7u2Yi0yUxNNYavFH7x56Nu6hCMz6kRoj5ETqA4nczDwjJOpKVWrVy4o17UmjCdQSjPrxuqCx8KIPKtbDMSy6c5lmWYPtSKkHdB5HqVGELywPC3ymlbyvM7fnhqQC5FVkjiKMqcg2xMYo0RcGgtnT7jklcYpFIXIVlGh8o2omhFK2l9JPPQTmb/hnVqssj5Qi7uPqkJ/gfF5FV6CEpbEDxyDzQeP6J2eSdD6SAU1jH6XFklNzFGIKhUqCaLKCbaZKlGYW7xqwx3wg+dMH9985DA6ORqqM/No/G0UTPzBt/EwigGVhMh3f6SVqXomZ1twhwW9227B55biAsjNUvysrPA+BbcXZ7H7bm/voU64rbj5sq0YX9NWOBpXvxb/WgZ/8OHrtuOkyv+6swja4Ov/V+n7IQvPLX+S/ZzfL0DV+H0huGT6HZiN2XmKsAyPatgnhnfJ3tIl20/Bl7k+GPnV74q8/998EV7/ArkbP/oICQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bed014ae8341439027aba6d0deaad32f"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a2d0d0ae8341439027aba6d0deaad3ba^sys_idNOT IN22d014ae8341439027aba6d0deaad328,6ed014ae8341439027aba6d0deaad324,9306d6aa8341839027aba6d0deaad3ab,db06d6aa8341839027aba6d0deaad3af"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">de3fba0683498f5027aba6d0deaad3f6</block>
+        <comment/>
+        <connected_to>74c717c6-94d6-4c09-b789-7aa8ea31e4f3</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>22d014ae8341439027aba6d0deaad328</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:27</sys_updated_on>
+        <ui_id>f19159d3-d71f-499f-bd1b-7c7ee0561273</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da3fba0683498f5027aba6d0deaad3f0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:32</sys_created_on>
+        <sys_id>6ed014ae8341439027aba6d0deaad324</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:27</sys_updated_on>
+        <ui_id>74c717c6-94d6-4c09-b789-7aa8ea31e4f3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWdDD8utSGC0CFGgboAlyaQNhRa5sohSpkpQT1/C/d6mHYzQOWhQ59ibOcndnlrM6BLp1TevsrV5bKzYqWH29DwOhPEbfh0BBjcEqYFpx4YRWRQeEwQ5k6wPrpjF6h/wtYVzYRsL+7kKIbYXkBof6DRiq4tAEq8NvIbdvsJBQoqQKN84ItaF0welUxVAlS5awLJ1laRyni2lSzrIySXkGCBndGxPfjXTffOyQ8EUdvh/hduykDfe0kjgM8NGh4kitK5AWw6AGxcFpsz8hBoFfK/kEbIVyVC7wlx+t+Em10zz3FyskjQz74OlYDDPrYbbVguF14wn2iINSDjlMy7ZWn3sdftpYQSvdOG1CWkv1sPGkPYuBUnWz1Q9fxoZXQnUCh6DUDOTpBI7GULYOrX8YlFhToaKGpqHhFP41RZdMXOpoI+kQVVI/UFPvnQiYJx7RjCC6Ivx9B9+BEV7FJypDyT3NEqxgReczKucMSTh2Yyl+tJ5QL3CQUvTToAuWGdG4NfXZ4cD6GD436Zk/D4flopomMWSTNGMwmSYZThbJIp/Mgc/LeD5jy+U0gs6rIAvrwOHx+K2N44zD4ODn3n6tsq+xF0vIqzyJ88t7MZ1d2osLG/HyMqR/WAb/fH+5C3Ec/1+G82UQtuhNPWjrmv/zLtx74/cdbO8bjkxYInLrsQ/jf90H9mQAwc6hB22+ewlP2PEXLG92dyEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9f06d6aa8341839027aba6d0deaad3a9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 11:35:28</sys_created_on>
+        <sys_id>9306d6aa8341839027aba6d0deaad3ab</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:27</sys_updated_on>
+        <ui_id>56d141d1-db00-4ca5-a794-9e36272aacac</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VW2vbMBT+K5mfjfGlCWteRugoDNYV1tKXrZhj6TgRkyVPkpN6wf99R76kYU1ZGe3b3qzv3L5z+fA+0I2rG2dv9cpasVbB8tt9GAjlMfreBwoqDJYB04oLJ7TKeyAMtiAbb7gC1YCU7QyVQ4N8VrQzt8HZildCfSBHLmwtob17qT/bCMkNjkxqMFSPPIPl/g+Ta2vMJRQoKe2NM0KtKVxwepUxlMk5S1iWLrI0jtP3Z0mxyIok5RkgZOQ3BV5Mjc0+90j4bMe+HuF2qqQN97SSOAzwwaHiSKVLkBbDoALFwWnTHhCDwK+VfAQ2QjlKF3jnByt+Ue50PveOJc1FMRyMh2c+DnKA2UYLhte1JzggDgo5xjAtm0p9GfrwK8ASGummFRDSWMqHtSftWYyUypuN3n2dCl4K1Tc4GqVmIA8vcDSGonFo/WJQYkWJ8grqmoaT10ZvRR9MXKpoLekRlVLvqKi/sgiYJx7RjCC6JPxjD9+BEb6LK0pDwQPNAqxgeX+RlM4ZaqHrx5L/bDyhocGxlXyYBjlYZkTtVlRniyPrLnx6zkeXvN9f0JIc8jyJWGNoBi6yrc3ZiBZt17373sRxxk+5aqLQe0XE2vRH03VP7/+NqryGas5hXs6TeH5aNWeLU6o5oZfnpZL+RSp+uS9UShzH/6VyLBVh8+Hkx9764v+slHsvi6GCHe6GIxOWiNx67NP0f/CGlg5AsGNop80P38Ij1v0GRONDNGkGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1306d6aa8341839027aba6d0deaad3af</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>56d141d1-db00-4ca5-a794-9e36272aacac</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 11:35:29</sys_created_on>
+        <sys_id>db06d6aa8341839027aba6d0deaad3af</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:27</sys_updated_on>
+        <ui_id>ddcafc02-998c-4500-a00b-56b452de4b9d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a2d0d0ae8341439027aba6d0deaad3ba</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:31</sys_created_on>
+        <sys_id>62d0d0ae8341439027aba6d0deaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 01:53:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a2d0d0ae8341439027aba6d0deaad3ba</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:53:31</sys_created_on>
+        <sys_id>ead0d0ae8341439027aba6d0deaad3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 01:53:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a2d0d0ae8341439027aba6d0deaad3ba"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,timeFromCreateToActivate=65419000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>dcdd3dc683418f5027aba6d0deaad33c</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>copy_of_base_allocation_hub_lifecycle</internal_name>
+        <label_cache>[{"name":"Created_1.current.opened_by.user_name","label":"Trigger - Record Created➛Base Allocation Record➛Opened by➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name","usedInstances":{"56d141d1-db00-4ca5-a794-9e36272aacac":["condition"]}},{"name":"Created_1.current.sys_created_by","label":"Trigger - Record Created➛Base Allocation Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"x_1902784_base_a_0_base_allocation","column_name":"sys_created_by","usedInstances":{"56d141d1-db00-4ca5-a794-9e36272aacac":["condition"]}},{"name":"98f410a3-23ca-413e-8185-7ad7b076c994.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"74c717c6-94d6-4c09-b789-7aa8ea31e4f3":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.manager","label":"Trigger - Record Created➛Base Allocation Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1902784_base_a_0_base_allocation","column_name":"manager","usedInstances":{"98f410a3-23ca-413e-8185-7ad7b076c994":["approval_conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Base Allocation Record","reference":"x_1902784_base_a_0_base_allocation","reference_display":"Base Allocation","type":"reference","base_type":"reference","usedInstances":{"10e02e44-844f-4567-a973-88853a8a08d0":["record"],"98f410a3-23ca-413e-8185-7ad7b076c994":["record"],"0529fd55-a564-481e-a898-bf1ddae3f0cc":["record"],"89abdcc6-2be1-44d2-b4b8-5853c466d03d":["record"],"aa55d073-fe05-43a3-ba48-0d82d54ef412":["record"],"a6e4f0e0-1899-4e8c-9a68-5979be8a730d":["record"],"87f68745-2b2d-46e9-b6e8-90890f7c871d":["record"],"0638b12b-4b6c-47fe-b4d3-2edbd25043e9":["record"],"b4d388db-de2f-4ec2-af35-f9b4e599061d":["conditions"],"50113336-4f8d-466e-b2bf-94ab03cc3e56":["record"]},"attributes":{}},{"name":"Created_1.current.opened_by","label":"Trigger - Record Created➛Base Allocation Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1902784_base_a_0_base_allocation","column_name":"opened_by","usedInstances":{"ba270e07-5103-4ab7-abf9-7c86b1ce9d90":["record","ah_to"]}}]</label_cache>
+        <master>true</master>
+        <name>Base Allocation Hub Lifecycle</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Base Allocation Hub Lifecycle">a2d0d0ae8341439027aba6d0deaad3ba</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>030258228381439027aba6d0deaad34c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:29</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=030258228381439027aba6d0deaad34c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=030258228381439027aba6d0deaad34c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=030258228381439027aba6d0deaad34c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=030258228381439027aba6d0deaad34c^sys_idNOT IN8f0258228381439027aba6d0deaad34d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>030258228381439027aba6d0deaad34c</id>
+        <name>Copy of Base Allocation Hub Lifecycle</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>8f0258228381439027aba6d0deaad34d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 01:58:45</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8f0258228381439027aba6d0deaad34d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=030258228381439027aba6d0deaad34c^sys_idNOT IN0b0258228381439027aba6d0deaad365,8f0258228381439027aba6d0deaad34f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</model>
+        <model_id>030258228381439027aba6d0deaad34c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_030258228381439027aba6d0deaad34c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>0b0258228381439027aba6d0deaad365</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0b0258228381439027aba6d0deaad365"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</model>
+        <model_id>030258228381439027aba6d0deaad34c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_030258228381439027aba6d0deaad34c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>8f0258228381439027aba6d0deaad34f</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8f0258228381439027aba6d0deaad34f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=030258228381439027aba6d0deaad34c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=030258228381439027aba6d0deaad34c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=030258228381439027aba6d0deaad34c^sys_idNOT IN1f0258228381439027aba6d0deaad3a1"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>1f0258228381439027aba6d0deaad3a1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:35:31</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACutixnbesk0UDbDeo7W0fglSgRNIWSpOuRClxF/n3DnWzrIsvsbJ1XoKIpDiHR2fODP34XWfIJUy/1ufIZUTv6T6XJOCIzTdrAsNSDTscrdTcCnGMpAg2+rUMItLTaSBWc7JaMyRhMUUshEERYBLo12ZPjxGLyGwT3mPYCd5Ptsn21LNpeH5xzLFhDUd9x0UhcZBjZP8wJjwkfcFhMfZDCLP5I3vnEyzQbsoLvKXPcEC4fv341NPXKIBgUgH5XpnyFRqPemhsEcOzTduyDMMa9U33ynZNC9uIGAZsWGWmgl42ELQ9OnmRhGOCC1Zq3AUE4QfONsWKJVCf8rRCL6H/L+w+MtQ6SgC7R9K54tHJGEmHvaXwPfKwTshIRlKc6aRg0Yp/TfErLglFEZM5lzASAd2YrBVkBSJDRGdL8TzNA372eXK6bFJRz4onJGXgu5EkoSKc+gyod1JuQhEFCfrp3eRheuv8eTOf/Ho3daZ3s/n0fjK/u9Vfk3M5/0RqxxRhhsVJj/NaCOCzT5j6gDxauYCmp4de4K/ljSf9ONfga2+r64ng2M8kUtG2l0+Fu9rOT79P3IbRKm+vFDGX+F93v9c1nA6epturK4QwQS26dWlJt+WTN0CTDSSUT7dPwdnIMRLuG8b/JOLMot6q4ZXAhN1ut9NhcrEAVft8HUnF1jPiMnSkcBDGTolHtRQwHRJ1era6sg9rOog4bOEUX6iu7ITIgtEvfggHeIS8zNlKtoR5+iXbchpxTcCnhD+aFwVAltRyp6P3K7TIOKYzwognS7Kg38Ly029+GPp8UUJdBE1YqcUswoG8tPxIaezwzOBPXaZ1nfS4QmYlvU/ObdOk1CXUMoYqs03DdqlpDI0Botg2DM8q5XYdTCtKWZHEu+T4aRkeJmJkR0ivSnEG3ihnw1Eyinc1mJOgJJIZyaQbaGZH0CwFrWKI9kmOWMgyHb7dVee+o3XcDSAcI3gDH2uMasERDkiZeAYzfoP7ucj7exGIiOOqHak9NZ9r2xXaTxl/P3fohFQEZD+A3RWX5IFb2nPhIr7pwP1sarpj0icGmJ4NfucOxmPXQxalw6shscyK+21hNGL7EK53QG1xk1zbHLBROHGT3k7wvjMA1nzwZIDnO2AmzEb/S+c+htM9Lwl3AGrgMOVlNcNbMB+TfK7bbK+Fjrf5fW7G09HYG5jDoTeEewxkPO0TF5l9a4DGwyt7NKhkfA3KPpiygZkfcrsJN2ECpMUNvqVTl3Vdf0/ZhkRKVY5Or9Ic+tjkHZQGKVVK9Vm0xFREoH0V/Jf77TptRqAAJlfcrsr1MSjUh9XeF4Yr5LLWL0DoTzC+E1r1mS2sXNyVqiKSePesZ1+pSH80GFO72WLouMlitmDaYV58e3FkhsStudbUZxwr+Lgxb1obgzdIuCKTcsewp6XpihSzc1Ks9yPFPruNynOx9R75FrAfqIQlfcU5dUzFJI6gZfO+FRpMaBBE86mW/bZIsOZuNLkkQCmDfhkCair6ua5driJ1KIWCfyyQtAOvVTMY1rIG6vIKVUUK3d6ACR6iwcBu6YfH1RtwE6ADeC++bJ2cFXFTku2tXaftW92zsXqVJLuriCPrUqenbi5O5526sTwdOvX5hWff/b0BxYWWlKf/APubGyxmHwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=030258228381439027aba6d0deaad34c^sys_idNOT IN170258228381439027aba6d0deaad38d,1b0258228381439027aba6d0deaad391,570258228381439027aba6d0deaad388,88161aaa8341839027aba6d0deaad3bf,930258228381439027aba6d0deaad38a,d30258228381439027aba6d0deaad38c,d70258228381439027aba6d0deaad38e,d70258228381439027aba6d0deaad390,db0258228381439027aba6d0deaad392"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>74c717c6-94d6-4c09-b789-7aa8ea31e4f3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>170258228381439027aba6d0deaad38d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:35:32</sys_updated_on>
+        <ui_id>89abdcc6-2be1-44d2-b4b8-5853c466d03d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPEUoIZcBbC0Ka1LVSO/HSVdGN7YAl52O2Q2GI/77rxAkRVB2V+oLGE75fPufk3ORlTwQjUzLkzA8mwYiGQRgOfH8wHgbxKIyDAQuB84B4JIOUY6XiNFcMzxuQpQ3s9zPFwXAWBX1aKsUzczhgngldSNgtXRlG6FpIhnkyfXn1SAEKJxquyHR/kroUkoSYSyx9ajCdYjS7wp5ZTssUcUWiCd67zrnL9L7PMYNNFk7ge4RvDc8YRyAJSM09kkLGwORqR6ZGlRhA0uwxk7u2Yi0yUxNNYavFH7x56Nu6hCMz6kRoj5ETqA4nczDwjJOpKVWrVy4o17UmjCdQSjPrxuqCx8KIPKtbDMSy6c5lmWYPtSKkHdB5HqVGELywPC3ymlbyvM7fnhqQC5FVkjiKMqcg2xMYo0RcGgtnT7jklcYpFIXIVlGh8o2omhFK2l9JPPQTmb/hnVqssj5Qi7uPqkJ/gfF5FV6CEpbEDxyDzQeP6J2eSdD6SAU1jH6XFklNzFGIKhUqCaLKCbaZKlGYW7xqwx3wg+dMH9985DA6ORqqM/No/G0UTPzBt/EwigGVhMh3f6SVqXomZ1twhwW9227B55biAsjNUvysrPA+BbcXZ7H7bm/voU64rbj5sq0YX9NWOBpXvxb/WgZ/8OHrtuOkyv+6swja4Ov/V+n7IQvPLX+S/ZzfL0DV+H0huGT6HZiN2XmKsAyPatgnhnfJ3tIl20/Bl7k+GPnV74q8/998EV7/ArkbP/oICQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=170258228381439027aba6d0deaad38d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>f19159d3-d71f-499f-bd1b-7c7ee0561273</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>1b0258228381439027aba6d0deaad391</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 12:35:53</sys_updated_on>
+        <ui_id>aa55d073-fe05-43a3-ba48-0d82d54ef412</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWXU/bMBT9K5GfmNRFSVsYdE+MDmkTAwkmXiiznNhpvTl2ZjuFUuW/7zp22qplDCRe0PrS+n7lnJN7kt4sEadohIaMJulRepAP0sGgnyT9w2GaHQyytE8HhLEU9ZAkJYNKzXKlKZznRNQusFyeaEYsoziN81prJm3TQJ5yUwmyuA5lEMlnXFDIo9HNbQ9VRMNEyzQaLbdSz4UkSMYElF52mLYx2kXlzlTldQm4MO+CZ6FzHDLRlzFkoMnBSZMeYveWScoASEGEYT1UEkmJVXqBRlbXEADS9EKKxapixqX1REtyb/gDXHmYuLqCAbM8iLA64iCQDxdjYskVTM5trVd6KZ4z4zWhrCC1sCebMV9wUVmupG+xJBNdtxJ1Kc+9Img1YON+1AZAsMrxdMg9reJqpu4uO5CnXLaSBIpC5USsTsRazbPaOjhLxARrNS5JVXE5xZVWc942A5Qyngo4xIVQd3BNw6cyJrnDHYOqJD6F+LgNXxPNHYlvMAaamx4yC3MiiDFrKqAh/l07JJ5YoIBbFVoJcLsJrjnXvLLHcKk5C8CbXlj6bP+pDcuP1gu1MXO9+Pc4PUr6Hw6HOCOgJMFJ+CGcTO092XHBJyiIjjcLXmaKZ0DuTPG9XYXHKQRf7MTONnujc58Irth/NVccviVXBBpv3hb/MkPSf/Jxu7FJ7f6bDSMYC4//SZ0kAzr8oZljSASGTTBK+nBB3/trM7rriZe2v8wxz+DVOeaUM0HNI0Q7u7AScFuGPfEty4RkdB2Sq5fJq/kmPUjazxtyz3/wTvEUfcxh3tpgF3qqAbZMR1s9kV/7qKC4ZYLTFGOh1C9cV9j/uYnDF8jgFDLxlNmvqtaSiM/S6sVe+u7jRE/kXyZvhWPYGm73JmgykRP0aGdsZrywe10ONkruTPmpuFwPARkNmTO62o6maW7/AHq8OHNxCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1b0258228381439027aba6d0deaad391"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>570258228381439027aba6d0deaad388</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:35:32</sys_updated_on>
+        <ui_id>10e02e44-844f-4567-a973-88853a8a08d0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WW227bMAyGXyXwdRxYdhI7vcsaFCjQtUDb7aYoDFqiGgHyobbcw4K++yjbOTXpceuA3UUUKZE/+Vm5WjhKOAfOUERCTCTzJGPMY96I+SzCCBMejkP0I6fvZJAieZbI81LQ+g50bQ2LxWGJYFDEbMDrssTMPD3RvlBVoeHxZ+dGFj5XWtC+c3B13XcKKOlEg6VzsHi29d6UNCSoyfV8mdPzHM1jYdci53VKecVqaTzpImfdTu94RjsUZNNhfQcfDGYCKQ8JusK+k0ImwOTl48pCRYuzTK8Nc5WZttAUHir1i24OfOsnkSrjnQirZdwJ1JrlDAxcmLLmpi5XeuWKY9VqIlBCrc3hpq11OCuMyrM2xECil9G5rtPstFXEWR2w0Y+6oiSwsIXazOlyqkJezPP782WSRyprJOlK1DkHvVqBMaVKamPTWTi1utyndmverzdqbBxTKAqV3cRFmd+p5j7KPh3caFoMpM7vKc1K3WQD4LbUAXUCBkdknzXmn1AqW/d3OoaC7Z0/MnVb47GdI8G8MJh43A39UeAOPQ5uEonEhcSXo+FwHI0T5jz1neqxOtRQVWvFqFXxbW0LbvXrlIobsRul42bgbDAvVWGmlN4ddvo89Tu2IvbaIAf+em43zlzz9RCzieeH0TBOgBoGsdf90LYbTet3YPtGDr3ppsPH2HtHykv2LpuJ219Ch9+O7WQztnfabnTw+R+Er53aPexF3n/EXlfWn8O3pfU2e1tq/xP0eJIkMsGJyxLO3WGIkRv5ELo48ngg/cDzQvkJ9N4Cbvj69G48ZllulFQrSJbI+aEnJYsgCugoOSL6IIGx8AQCiCDAN4HrTe9BGdK1Ny2ssvjx1+/tGpYEnm4Xsb+0DsU1ENsknm/YOxCD10FsufvMI0jdxjvbTExB6bgdrBfofFbbXyb1pUy28AUpkdu/N1KhFjSBcRPzJS+qvEAo+fzI3mR72LK6jfpWYwl4umMH9c12fh3pl7szVaGJO1lie0As8zIFOxFNhc8/EMMJwzDwI3cy9ukDgcHITQgwl9EHAxFQ+uJr3ubr31oz0Ir5CgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=570258228381439027aba6d0deaad388"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>56d141d1-db00-4ca5-a794-9e36272aacac</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 11:35:31</sys_created_on>
+        <sys_id>88161aaa8341839027aba6d0deaad3bf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:35:31</sys_updated_on>
+        <ui_id>50113336-4f8d-466e-b2bf-94ab03cc3e56</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPEUoIZcBbC0Ka1LVSO/HSVdGN7YAl52O2Q2GI/77rxAkRVB2V+oLGE75fPufk3ORlTwQjUzLkzA8mwYiGQRgOfH8wHgbxKIyDAQuB84B4JIOUY6XiNFcMzxuQpQ3s9zPFwXAWBX1aKsUzczhgngldSNgtXRlG6FpIhnkyfXn1SAEKJxquyHR/kroUkoSYSyx9ajCdYjS7wp5ZTssUcUWiCd67zrnL9L7PMYNNFk7ge4RvDc8YRyAJSM09kkLGwORqR6ZGlRhA0uwxk7u2Yi0yUxNNYavFH7x56Nu6hCMz6kRoj5ETqA4nczDwjJOpKVWrVy4o17UmjCdQSjPrxuqCx8KIPKtbDMSy6c5lmWYPtSKkHdB5HqVGELywPC3ymlbyvM7fnhqQC5FVkjiKMqcg2xMYo0RcGgtnT7jklcYpFIXIVlGh8o2omhFK2l9JPPQTmb/hnVqssj5Qi7uPqkJ/gfF5FV6CEpbEDxyDzQeP6J2eSdD6SAU1jH6XFklNzFGIKhUqCaLKCbaZKlGYW7xqwx3wg+dMH9985DA6ORqqM/No/G0UTPzBt/EwigGVhMh3f6SVqXomZ1twhwW9227B55biAsjNUvysrPA+BbcXZ7H7bm/voU64rbj5sq0YX9NWOBpXvxb/WgZ/8OHrtuOkyv+6swja4Ov/V+n7IQvPLX+S/ZzfL0DV+H0huGT6HZiN2XmKsAyPatgnhnfJ3tIl20/Bl7k+GPnV74q8/998EV7/ArkbP/oICQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=88161aaa8341839027aba6d0deaad3bf"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>930258228381439027aba6d0deaad38a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:35:32</sys_updated_on>
+        <ui_id>0529fd55-a564-481e-a898-bf1ddae3f0cc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeR1FOVBGWDXgpBG6rRSO2LTqSInvgFLzmNsh8Ig/n2uEydEUHWo1A0aVvi+fM7JucnLnnBGpmQIzPMn/igJ/TAMPC8YD/14FMZ+wEIK4BOH5DQDrJSQFJLheUNFZQL7/UwC1cAi300qKSHXhwPmGVeloLulLcNIsuaCYZ5MX14dUlKJEzVIMt2fpC6FJGgMAkufWkynGPWuNGdWJFWGuCLeBu9t59xmBt/nmMEmA8f3HAJbDTkDBJJSocAhGc0Z1YXckamWFQaQNHvMxa6rWPNcN0QzulX8D9489ExdCsgssSJ0x8gK1ITTOdX0GScnupKdXgVPQDWaMEhpJfSsH2sKHkvNi7xp0TQWbXchqix/aBQh3YDe86gUgoDS8DTIG1rp87p4e2pBLnheS2IpiiKhojtRrSWPK23g7AkIqDXOaFnyfBWVstjwuhmhZO5K4MFNRfGGdyq+yl2aGNwuqkrdBcbndXhJJTckfuAYbD44RO3UTFCljlRQw+h3ZZA0xCyFqFahliCqnWCaE8lLfYtXbcACPzjW9PHNRw5LJkdD9WYejb+N/IkXfBsPo5iikjTy7B9hZKqfydkW3GHB4LZf8LmluAByuxQ/ayu8T8HuxVnsvt87eGgSdituvmwrxte0FZbG1a/Fv5bBCz583facVPtf9RZBaXz9/6o8L2TBueVPsp/z+wWoWr8vOAim3oHZmh0yhKUhamCfGN4mB0ub7D4FX+Z6f+TVvyvy/n/zRXj9C9N8e44ICQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=930258228381439027aba6d0deaad38a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>d30258228381439027aba6d0deaad38c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:35:32</sys_updated_on>
+        <ui_id>98f410a3-23ca-413e-8185-7ad7b076c994</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YXXPaOBT9K4yeCStjbAxv2TCZ6c5uO5OkfQkZjyzJoB1hu5adhmX4772W5I9CQmFLH9L0JRNd3Sufe3yOZHG/QYKhKRoH8ZBPJkMcORi7GAcexYHLI3fsj11CMeqjhKw4ZOacpjmD8SORZRXYbK5yTgrOQmdAyzznSbHdwjwTKpNk/cmmQYQuhWQwj6b3D32UkRxWLHiOppudqWMhSRJxCak3NaZdjMU6q8YspeUKcIWiDv5tK2d2pvduBjNQVMHBfcSfCp4wDjhiIhXvoxVJGCnSfI2mRV5CAHpmHxK5bjKWIilMnyvypMR/8GB3WOXFHBqjloNmGFp+TDiekYLcwsq0KPOGrlRQrgwljMeklMVVN2YSPmSFSBNTUpBI1tWpLFfJe0MIahbovI5SAQieVX1WyE1b8e0y/XJTg7wWiWbEtihTSmQzIkWRi6gsKjgbxCXXFK9IlolkEWZ5+ih0MUBZDRYSBoNYpl/gmUoskgGhFe4BsEoG1xCf6fAnkouqiX9gGSje9pFaqytJlGpbAQ7Dz2WFxDRmWwg1C4aCqo7mIisu4SmP3GLe9q3cI3pQW7SVklmuVftT6EzwcByMwogAfyTE9h9ZkaPfxJ70/4SE3mU34TQnHIG2dsKdhbuD3vpAD0M9960NdFnvvZmwLnAOu8BGWhsY/TzjggC/IhfYtl69Db7nAD7yXQ/+jGMXO0MHB9wPAjrBhAa+743cVkOAAHogMoRXrbR6H1v2fnSTPwJGLe1Li6N3U+N4EaCVu4IXkyx2pH5bB63MhyfK/OXd3vHfktBLcbfDsons8fxzHFE97mMiPpf8XaUjfxj5ExywCxbj6GIUuN4FoRxfcN/xuMd86jnuT3ARdg7tzCx4RqSx4LL7+VRP7JupM3OaqY5AtWeqawvrJbjWUnr43Ami63dOkPNZK8D4NXnrLX1K0YNi452D5N+0zJMDDgiXQmllvOiETsZpjjgCZO2IvwzKXUPsgv8/fnB/++HX98PIOyi1zsd5o2qaJkxUiFXHFWZn5uoyWX+8f+aOPQDlkAXPt9uHfcOcVnyal45osLmXl5Kr7zVsndR+xdmirpvabz87aR01OtdN/ZUZ6q3cUuhBrcWTVlusBIJA5N0fpubIwJ6j6RwlacLnqD9HVVZYiUuHIQPANRM6ttlstyZS5sQu4HSGbTUja6UzFV1yBtrU0W8ioTaDjZ/jd7EjOKn9Nyt5b2ZI2aepviTVOA0vYu8ku7UJeqU/7kT3RPPOdqKNftvvHFeisLk0wHEFu98ZPfnwFbIfzcQsFgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d30258228381439027aba6d0deaad38c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>74c717c6-94d6-4c09-b789-7aa8ea31e4f3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>d70258228381439027aba6d0deaad38e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:35:32</sys_updated_on>
+        <ui_id>a6e4f0e0-1899-4e8c-9a68-5979be8a730d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WW207jMBCGXwXluqmcQ5uUOxaEhMSCBOzeIBRN7DFYcg4kToGtePcdJ+m5HHdZae/q8emff+aLez1zlHD2nVDEQkykx6TnecxjI8/3Yowx5dE4Qj92Bk4OGdLKCnlRCRpPQTc2MJsdVggGReINeVNVmJvnZ5oXqi41PP3sl1GE3yktaN7Zv74ZOCVUdKLBytmfbUy9V5KGFDUtvZhr2tRonko7FgVvMtKVqHnwtN951M/snRzRDG2ycryBg48Gc4GkQ4KuceBkkAswRfW0iFDS4jzXy8Cdyk2XaAaPtfpFNwe+XSeRMuO9CYth0hvUheURGLg0VcNNUy38KhTHuvNEoIRGm8PVWLfgvDSqyLstBlI9313oJsvPOkecxQEr9WhqEoGlTdQqp8spC3l5VzxczEUeq7y1pE9RFxz0YgTGVCptjJUzcxp1tcvtLrzbb9TYLsygLFV+m5RVMVXtfaQ+G95qGgylLh5IZq1u8yFwm+qQKgHDY4ofteGfUCmb93c6hjbbO3/k6r7BE9tHwmNRMGHcjfxR4IaMg5vGInUh9eUoDMfxOPWc54FTP9WHGup66RiVKrlvbMKdf71TSWt263TSNpzdzCtVmgOSN8Xen+dBz1bsvdbIgb/s25Uzl3w9Jt6E+VEcJilQwSBh/Q9tq9GWfgu2b7Rg72B1wcfYe4fkOXtXbcftTqHHbyt2urp376yb6OHzPwhf17U72IvZf8Ren9afw7fm9Tp7a27/E/R4mqYyxYnrpZy7YYSxG/sQuThiPJB+wFgkP4HeW8CFr3fvymOWF0ZJtYBkjhxnyFjAIA7CSSxHRB+kMBZMIIAIJsGbwO0dlNZQFB9/9d7WPifvbF387pR6BJcgrBN4sRLvAQxeB7Dj7TOPH1UZp7aImIHSSddQL1C5kdtfJvQlJWvYgpTI7d8aqVAL6ryk3fMlL6m8RKj43bG9ydawY3Qd8bXCEuh0xxbiq+X8OsKvtnuqRpP0tiT2gEQWVQa2I9oMNz8M4cTDKPBjdzL26cOAwchNRRC4Hn0oEAGlL77mTb75De5evLnxCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d70258228381439027aba6d0deaad38e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>f19159d3-d71f-499f-bd1b-7c7ee0561273</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>d70258228381439027aba6d0deaad390</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:35:32</sys_updated_on>
+        <ui_id>b4d388db-de2f-4ec2-af35-f9b4e599061d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgo0G2AJttLt0tQJBVzlyZVkkqaGP7vHYqUbdiKbaEOkGBv5nBIvpl5b0j52zLmNL6M6TSZ5tPpcDJOkn4/SUajPsFplvVHJEsyPIg7scQLBp4WZ4LB8AGL0o3Nk8FFoRWMkf/BNExTbgqBn74Grw/BBWbInAuqmYwvv33vxAXWsK+FNZfLnalTgQmcMQGudwHZDlD7VKyHqJrztk/by6LPfkJp6qAknZj9tExSBhhyLAzrxAssKbZKP60tmmF6I8XGMOfSwo6xc/5p+DOcO0mcX84gKsL83HqIQpK8Ob/GFt9aXRJb6uBK5ooTZnw+KMtxKezVts073BSWK+mX+LD9aiXKhfzs0xGvN6hrApbSAAhWuEAd8hBGfjtXj19qlDMuq5yESaEIlLEeYWs1z0rr8CxjJtgCNkILIAKX98jVnFeLAcuiey9g0M2FeoRDDb+XXUwc8C7kFXdnYL+uzF+x5i6KP2Gbikw5F8AQ5EtoVKmrVD4gIkpTTWgsjd8rXnUcJa8ENmYTOaQc/Sgdbp+HEDHySXNLiOaF/QBbPLAQ3KpTa2N4kILTDeWIkpQ7FKZZIH+XsANdLq+AOZZRlHZJqSHJdrX6x1gweQfN/mUE5vdl9Ft7tRTe8ahr4V1th92UiiDBPdunpg2CBNOzSXCQJO9JhHD429Nge1X5FByRVkoPkoxu+GSUtsjncktb+wppzfMTINQ8v3HMjLKnl1AFmuecCdp008zcxM5N0/t/3jRvkuQAiCJfPS4Fl9WzAYC+FvuHB6mXpTs8q+i1da84GzZkXwM4sip6bq2EE+DUSriFs6M7j6cBYt3vK8rs9vraGATQP5sA+r3zCGC5DnOdyIac1y9FV83a/9n5411/oODWgnTVJLBWZ6Ztz+yt9gXcb6XgbbL5mesXOHfmJ+ULiuy8ZguYw9JwHvL6RY+c3jO7Ob32oso+YvFf03xgHKoLVYX3Cs/T9OAXUrb1POU5WkDleAGvaM0IkMMgrBnKVSkpCu/nDZFcJXOujQ3O+43mCwP9yEiBMCM7Z1HlHa29W17Ex+OoU/kxj+pAwmkmgkCiKpBoHUi7sNs0rcEZH6fnblozzEVVDfg0KrbKybRW+oXGdaSQBxhxYlc7EVR6VlC/3/aaJNDY/o5gfRff2edvTYThbNDDo3E/TZMkTeg4mYzH6WSU5SM8HuQbjSJkJIFuCjvnQBXYHtXUqOuc7Pcf31LbNpoTUNUUvFbSfUb3xjZysKC+UQ3rOPDQUDKlBMNyp6PcwT3xxyzgD3wdvrmu8i7+dSr53W6mvakx16/1bij5X5L/KNlHR7EJS3qTlJKLyTgdXwxyOrqYUjy8wNNsOO5TRgb5OZ8C338BGKjjIscVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d70258228381439027aba6d0deaad390"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>f19159d3-d71f-499f-bd1b-7c7ee0561273</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>db0258228381439027aba6d0deaad392</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:35:32</sys_updated_on>
+        <ui_id>0638b12b-4b6c-47fe-b4d3-2edbd25043e9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WW207jMBCGXwXluqlyapNyx4KQkFiQgN0bhKKxPQZLzoHEKbAV777jJD2X4y4r7V09Pv3zz3xxr2eOEs6+E4lEiIn0Pen7vud7Iz/wE0yQ8XgcY5A4AyeHDGllhbyoBI2noBsbmM0OKwSDIvWHvKkqzM3zM80LVZcann72yyjC75QWNO/sX98MnBIqOtFg5ezPNqbeK0kDQ01LL+aaNjWap9KORcGbjHSlah487Xce9TN7J0c0Q5usHH/g4KPBXCDpkKBrHDgZ5AJMUT0tIpS0OM/1MnCnctMlmsFjrX7RzWFg10mkzHhvwmKY9gZ1YXkEBi5N1XDTVAu/CsWx7jwRKKHR5nA11i04L40q8m6LAabnuwvdZPlZ54izOGClHk1NIrC0iVrldDllIS/vioeLuchjlbeW9CnqgoNejMCYSrHGWDkzp1FXu9zuwrv9Ro3twgzKUuW3aVkVU9XeR+qz4a2mwVDq4oFk1uo2HwK3qQ6pEjA8pvhRG/4JlbJ5f6djaLO980eu7hs8sX0kfC8OJx5342AUupHHwWWJYC6wQI6iaJyMme88D5z6qT7UUNdLx6hU6X1jE+78651KW7Nbp9O24exmXqnSHJC8Kfb+PA96thL/tUYOg2Xfrpy55Osx9SdeECdRyoAKBqnX/9C2Gm3pt2D7Rgv2DlYXfIy9d0ies3fVdtzuFHr8tmKnq3v3zrqJHr7gg/B1XbuDvcT7j9jr0/pz+Na8Xmdvze1/gh5njEmGE9dnnLtRjImbBBC7OPJ4KIPQ82L5CfTeAi56vXtXHrO8MEqqBSRz5OIwDhKWQBJGk0SOiD5gMBaeQAARjsI3gdu7QGsoio+/em9rn5N3ti5+d0o9gksQ1gm8WIn3AIavA9jx9pnHj6qMU1tEzEDptGuoF6jcyO0vE/qSkjVsQUrk9m+NVKgFdV7a7vmSl1ReIlT87tjeZGvYMbqO+FphCXS6Ywvx1XJ+HeFX2z1Vo0l7W1J7QCqLKgPbEW2Gmx+GaOJjHAaJOxkH9GHAcOQyEYauTx8KREAZiK95k29+A0R4z1DxCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=db0258228381439027aba6d0deaad392"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=030258228381439027aba6d0deaad34c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=030258228381439027aba6d0deaad34c^sys_idNOT IN170258228381439027aba6d0deaad37a,48161aaa8341839027aba6d0deaad3c4,48161aaa8341839027aba6d0deaad3d3,5f0258228381439027aba6d0deaad377"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">de3fba0683498f5027aba6d0deaad3f6</block>
+        <comment/>
+        <connected_to>74c717c6-94d6-4c09-b789-7aa8ea31e4f3</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>170258228381439027aba6d0deaad37a</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:29</sys_updated_on>
+        <ui_id>f19159d3-d71f-499f-bd1b-7c7ee0561273</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9f06d6aa8341839027aba6d0deaad3a9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 11:35:32</sys_created_on>
+        <sys_id>48161aaa8341839027aba6d0deaad3c4</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:29</sys_updated_on>
+        <ui_id>56d141d1-db00-4ca5-a794-9e36272aacac</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K5mejbGdJqx9KSGlMGhXWEtftmKuJTkRkyVPH0k94/++K9v5YM1Yy7a3vVlHV/eec6SDW6K9q72zD3phrVgpcvH5KSJCBQy/W6Kg4uSCUK2YcEKrvAcisgHpw8YtKA9SNhOuHDecTYpm4tZ8smCVUJdYyIStJTSPr62nayGZ4SOTGgzOw0py0f60JRi2KxMo03Oa0mk2n2ZJkr0/S4v5tEgzNgUOU2wooeASS5c7CZObHol+qc01dcCtM0KtxvXN2OV+B2rDAqs0iQh/dlwxjnxKkJZHpALFwGnT7BHDgd0peQDWQjlsR0LxsxXfcWA2m4XCEm1RlA+b+2U++jjA5RU4QCqeOm/GUrrWgnI7mMN4CV665TE2FNzVQepwxEEhd6e19JX6ODhC9g1214aIt0iC10FpoD7qKO/Xevtpx/JaqN6VcVNqCnK/AofeFd4FPi3hklfYKK+grtHRvDZ6I/rDyKWKVxIXcSn1FoeGlxkDDcRjNBbia8SvevgRjAgqbrENHh5oFmAFzftXjO3QJk66iNjGLiVYexCJ7ubffKA4SB7F5YM/4Qg1onYLnLzho44uehmKozy07RLv2nGWpzH1Bl1xMQ7O6YgWTde9++KTZMpOlWqk0FfFqMP0D7LrXqboH015W/bOYVbO0mR2Ontn81PZO5G6NwYu+03gwm2/Mm9JkvwP3B8HTth8iMmorR/+F/P2FMI1zNx7TYVFag8B+7D7V4WNBh+XoMfQVpuvQdQB634AHD68gvUGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1306d6aa8341839027aba6d0deaad3af</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>56d141d1-db00-4ca5-a794-9e36272aacac</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 11:35:32</sys_created_on>
+        <sys_id>48161aaa8341839027aba6d0deaad3d3</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:29</sys_updated_on>
+        <ui_id>ddcafc02-998c-4500-a00b-56b452de4b9d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da3fba0683498f5027aba6d0deaad3f0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Base Allocation Hub Lifecycle">030258228381439027aba6d0deaad34c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>5f0258228381439027aba6d0deaad377</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:29</sys_updated_on>
+        <ui_id>74c717c6-94d6-4c09-b789-7aa8ea31e4f3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWdDD8utSGAkCFEgboAlyaQNhRVI2UZpUScqOK/jfu9TDNhoXbdAcezNnucuZ0Q7cEF27qnb2QS+tFStFFl+eAiKUx/B3QxRsOFkQqhUTTmiVt0BAtiBrX1hWldFbzt4jxoStJOwfL5ToWkhmeD+/AoNTHDdk0fxSEgw7ywjKeE5jmiaTNImiZDaOi0laxAlLgUOKAyUUXOLVq4HYu9sWCX7L2O0rj1tnhFr159t+yv0AasM8qzgKCH92XDGOfEqQlgdkA4qB02Z/RAwHdqfkCVgL5XAc8ZefrfiBDyZZ5i+WHCVS3hWPx7y3rIPLa3CAVGrqatNfpWstKLedOYyXUEt3dY51F+4qL7VrcVDIoVvLeqM+dY6Q44DhCyFSWyTBK6/UU+91lPdrvfs8sLwRqnWlL0pNQR5P4NC7onaeT0O45BsclG+gqtDR3G+AaJuRyyZcSTyEpdQ7fNTvWwjUEw/RWAhvEL9u4Ucwwqv4iGOwuaNZgBU0b3cTx6FNnBwCYvf2SoK1J5Hobv699hQ7yb24vPPHt1AjKrfEl7e813EIXq762ZY3zXxWjuMI0lGSUhiN45SPZvEsG02BTYtoOqHz+TiEduNB5taB44fD1zqKUgZ9Dl4m5K3Gvi5dc8jKLI6yy+kaTy6l60KuXhmp5A+R8t/zLxMVRdH/SP1zpITNuyD02trH3zBRTz4+3ZtHr6mwSO3BYx+G/xhf2ONyCXoO7bT55kWdsMNP/D+KpK0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=030258228381439027aba6d0deaad34c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=030258228381439027aba6d0deaad34c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_030258228381439027aba6d0deaad34c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>c70258228381439027aba6d0deaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 01:58:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_030258228381439027aba6d0deaad34c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:58:45</sys_created_on>
+        <sys_id>cb0258228381439027aba6d0deaad361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 01:58:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_030258228381439027aba6d0deaad34c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_030258228381439027aba6d0deaad34c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>a2d0d0ae8341439027aba6d0deaad3ba</sys_id>
+        <latest_snapshot>030258228381439027aba6d0deaad34c</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch11-12-16-2025_01-04-2026_2103.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a2d0d0ae8341439027aba6d0deaad3ba^sys_idNOT IN2cada22e8305839027aba6d0deaad36b"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"2cada22e8305839027aba6d0deaad36b","name":"plan","plan_signature":null}}</plan>
+        <plan_id>a2d0d0ae8341439027aba6d0deaad3ba</plan_id>
+        <snapshot>b142be268345839027aba6d0deaad3aa</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 13:18:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2cada22e8305839027aba6d0deaad36b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 13:18:30</sys_updated_on>
+        <trigger display_value="">f9708e0e83418f5027aba6d0deaad363</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a2d0d0ae8341439027aba6d0deaad3ba"/>
+</record_update>

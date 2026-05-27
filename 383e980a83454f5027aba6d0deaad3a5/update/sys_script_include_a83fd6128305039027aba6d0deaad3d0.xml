@@ -4,15 +4,16 @@
         <active>true</active>
         <api_name>x_1902784_base_a_0.BaseVagasUtil</api_name>
         <caller_access/>
-        <client_callable>false</client_callable>
+        <client_callable>true</client_callable>
         <description>Story 7/ Story 8</description>
         <mobile_callable>false</mobile_callable>
         <name>BaseVagasUtil</name>
         <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var BaseVagasUtil = Class.create();
-BaseVagasUtil.prototype = {
+BaseVagasUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
     // Story 7 — filters bases with available spots
+    // Também utilizada pelo Client Script para validação de lotação máxima
     getAvailableBases: function() {
         var availableBases = [];
 
@@ -27,8 +28,11 @@ BaseVagasUtil.prototype = {
 
             var allocationGR = new GlideAggregate('x_1902784_base_a_0_base_allocation');
             allocationGR.addQuery('base', baseId);
+            
+            // Contabiliza estados 2 (Awaiting) e 3 (Approved)
             var stateQuery = allocationGR.addQuery('state', '2');
             stateQuery.addOrCondition('state', '3');
+            
             allocationGR.addAggregate('COUNT');
             allocationGR.query();
 
@@ -50,8 +54,8 @@ BaseVagasUtil.prototype = {
     // Story 8 — blocks user with active registration
     canRegister: function(userId) {
         var allocationGR = new GlideRecord('x_1902784_base_a_0_base_allocation');
-        //allocationGR.addQuery('gs.getUserID');
         allocationGR.addQuery('opened_by', gs.getUserID());
+        
         var stateQuery = allocationGR.addQuery('state', '1');
         stateQuery.addOrCondition('state', '2');
         stateQuery.addOrCondition('state', '3');
@@ -62,19 +66,36 @@ BaseVagasUtil.prototype = {
         return this.getAvailableBases();
     },
 
+    // Story 13 — filters users from Base Allocation Users group
+    getAvailableUsers: function() {
+        var userIds = [];
+
+        var grMembers = new GlideRecord('sys_user_grmember');
+        grMembers.addQuery('group.name', 'Base Allocation Users');
+        grMembers.query();
+
+        while (grMembers.next()) {
+            userIds.push(grMembers.getValue('user'));
+        }
+
+        if (userIds.length === 0) return 'sys_id=NULL';
+
+        return 'active=true^sys_idIN' + userIds.join(',');
+    },
+
     type: 'BaseVagasUtil'
-};]]></script>
+});]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-26 18:17:25</sys_created_on>
         <sys_id>a83fd6128305039027aba6d0deaad3d0</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>BaseVagasUtil</sys_name>
         <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
         <sys_update_name>sys_script_include_a83fd6128305039027aba6d0deaad3d0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-26 19:16:16</sys_updated_on>
+        <sys_updated_on>2026-05-27 12:55:01</sys_updated_on>
     </sys_script_include>
 </record_update>

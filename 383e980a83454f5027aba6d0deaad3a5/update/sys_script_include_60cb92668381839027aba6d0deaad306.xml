@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1902784_base_a_0.UserGroupUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Story 13</description>
+        <mobile_callable>false</mobile_callable>
+        <name>UserGroupUtil</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var UserGroupUtil = Class.create();
+UserGroupUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    // 1. Função para o Client Script buscar o gerente
+    getBaseManager: function() {
+        var baseId = this.getParameter('sysparm_base_id');
+        if (!baseId) return '';
+
+        var grBase = new GlideRecord('x_1902784_base_a_0_base_registration'); 
+        if (grBase.get(baseId)) {
+            return grBase.getValue('manager') || '';
+        }
+        return '';
+    },
+
+    // 2. Função para o Reference Qualifier (Lupa)
+    getAvailableUsers: function(currentBaseId, groupName) {
+        var query = 'active=true';
+
+        // Filtra pelo grupo
+        if (groupName) {
+            var groupIds = [];
+            var grMember = new GlideRecord('sys_user_grmember');
+            grMember.addQuery('group.name', groupName);
+            grMember.query();
+            
+            while (grMember.next()) {
+                groupIds.push(grMember.getValue('user'));
+            }
+
+            if (groupIds.length === 0) return 'sys_id=NULL';
+            query += '^sys_idIN' + groupIds.join(',');
+        }
+
+        // Trava de duplicidade (States 2 ou 3)
+        if (currentBaseId) {
+            var excludedUsers = [];
+            var grAlloc = new GlideRecord('x_1902784_base_a_0_base_allocation'); 
+            grAlloc.addQuery('base', currentBaseId);
+            grAlloc.addQuery('state', 'IN', '2,3'); 
+            grAlloc.addNotNullQuery('opened_by');
+            grAlloc.query();
+            
+            while (grAlloc.next()) {
+                excludedUsers.push(grAlloc.getValue('opened_by'));
+            }
+
+            if (excludedUsers.length > 0) {
+                query += '^sys_idNOT IN' + excludedUsers.join(',');
+            }
+        }
+        return query;
+    },
+
+    type: 'UserGroupUtil'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 12:01:15</sys_created_on>
+        <sys_id>60cb92668381839027aba6d0deaad306</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>UserGroupUtil</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_script_include_60cb92668381839027aba6d0deaad306</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 12:56:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

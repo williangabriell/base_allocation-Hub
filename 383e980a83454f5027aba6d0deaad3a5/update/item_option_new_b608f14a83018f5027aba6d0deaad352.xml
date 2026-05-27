@@ -61,8 +61,10 @@
         <record/>
         <record_producer_table>x_1902784_base_a_0_base_allocation</record_producer_table>
         <reference>x_1902784_base_a_0_job_function</reference>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>sys_id!=adb63e6e8345839027aba6d0deaad318^EQ</reference_qual>
+        <reference_qual_condition table="x_1902784_base_a_0_job_function">sys_id!=adb63e6e8345839027aba6d0deaad318^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="!=" or="false" value="adb63e6e8345839027aba6d0deaad318"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -82,14 +84,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-25 20:08:05</sys_created_on>
         <sys_id>b608f14a83018f5027aba6d0deaad352</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>job_function</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Select Function</sys_name>
         <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
         <sys_update_name>item_option_new_b608f14a83018f5027aba6d0deaad352</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-25 20:20:31</sys_updated_on>
+        <sys_updated_on>2026-05-27 14:26:30</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

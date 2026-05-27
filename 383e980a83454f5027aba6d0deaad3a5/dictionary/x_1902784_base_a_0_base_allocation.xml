@@ -2,7 +2,7 @@
     <element db_object_id="7b05c90683894f5027aba6d0deaad37d" extends="task" label="Base Allocation" max_length="40" name="x_1902784_base_a_0_base_allocation" type="collection">
         <element label="Reproval reason" max_length="400" name="reproval_reason" type="string"/>
         <element label="Base" max_length="32" name="base" reference="x_1902784_base_a_0_base_registration" type="reference"/>
-        <element label="Job Function" max_length="32" name="job_function" reference="x_1902784_base_a_0_job_function" type="reference"/>
+        <element label="Job Function" max_length="32" name="job_function" reference="x_1902784_base_a_0_job_function" reference_qual="sys_id!=adb63e6e8345839027aba6d0deaad318^EQ" reference_qual_condition="sys_id!=adb63e6e8345839027aba6d0deaad318^EQ" type="reference"/>
         <element label="Manager" max_length="32" name="manager" reference="sys_user" type="reference"/>
     </element>
 </database>

@@ -5,7 +5,7 @@
         <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Job Function</column_label>
@@ -39,8 +39,10 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>sys_id!=adb63e6e8345839027aba6d0deaad318^EQ</reference_qual>
+        <reference_qual_condition table="x_1902784_base_a_0_job_function">sys_id!=adb63e6e8345839027aba6d0deaad318^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="!=" or="false" value="adb63e6e8345839027aba6d0deaad318"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <reference_type/>
         <spell_check>false</spell_check>
         <staged>false</staged>
@@ -53,7 +55,7 @@
         <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
         <sys_update_name>sys_dictionary_x_1902784_base_a_0_base_allocation_job_function</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-25 16:26:27</sys_updated_on>
+        <sys_updated_on>2026-05-27 14:20:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

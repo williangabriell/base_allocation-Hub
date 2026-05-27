@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Automatically populates the manager field based on the selected base and sets the state to Approved when a new allocation record is created manually from the Base Registration related list.</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Base Maximum Capacity</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    // 1. Só aplicamos a trava de lotação se for a criação de um registro NOVO
+    if (!g_form.isNewRecord()) {
+        return true; // Se for apenas uma edição, permite salvar normalmente
+    }
+
+    // Pega o sys_id da Base que está preenchida no formulário
+    var baseId = g_form.getValue('base');
+    if (!baseId) {
+        return true; 
+    }
+
+    // 2. Chama o nosso Script Include (BaseVagasUtil) no servidor para checar as vagas
+    var ga = new GlideAjax('global.BaseVagasUtil'); 
+    ga.addParam('sysparm_name', 'getBasesComVaga');
+    
+    // O getXMLWait() trava a tela rapidinho até o servidor responder
+    ga.getXMLWait(); 
+    var basesComVaga = ga.getAnswer();
+
+    // Segurança: se não retornou nada, deixa passar (ou barra, dependendo da sua preferência)
+    if (!basesComVaga) {
+        return true; 
+    }
+
+    // 3. Se a string devolvida pelo Script Include (sys_idIN...) NÃO contiver o ID da Base atual, ela lotou!
+    if (basesComVaga.indexOf(baseId) === -1) {
+        // Exibe a mensagem de erro vermelha no topo da tela
+        g_form.addErrorMessage('Operação cancelada: Não é possível adicionar o inscrito. Esta base já atingiu o limite máximo de lotação.');
+        
+        // Retorna false para IMPEDIR a inserção no banco de dados e cancelar o Submit
+        return false; 
+    }
+
+    // Se passou por tudo, a base tem vaga, então permite salvar e seguir para o Flow!
+    return true; 
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 01:30:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e27b8ca28341439027aba6d0deaad30a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Validate Base Maximum Capacity</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_script_client_e27b8ca28341439027aba6d0deaad30a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 11:43:57</sys_updated_on>
+        <table>x_1902784_base_a_0_base_allocation</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
