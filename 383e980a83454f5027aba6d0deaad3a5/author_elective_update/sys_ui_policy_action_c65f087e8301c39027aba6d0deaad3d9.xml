@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>latitude</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 20:25:36</sys_created_on>
+        <sys_id>c65f087e8301c39027aba6d0deaad3d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>latitude</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_ui_policy_action_c65f087e8301c39027aba6d0deaad3d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 20:25:36</sys_updated_on>
+        <table>x_1902784_base_a_0_base_registration</table>
+        <ui_policy display_value="Mandatory Fields">5372b90283018f5027aba6d0deaad331</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=c65f087e8301c39027aba6d0deaad3d9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</application>
+        <file_path/>
+        <instance_id>acb5df9afbd7dad0843df4344eefdc1d</instance_id>
+        <instance_name>dev292903</instance_name>
+        <name>sys_ui_policy_action_c65f087e8301c39027aba6d0deaad3d9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>latitude</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-27 20:25:36</sys_created_on><sys_id>c65f087e8301c39027aba6d0deaad3d9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>latitude</sys_name><sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package><sys_policy/><sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope><sys_update_name>sys_ui_policy_action_c65f087e8301c39027aba6d0deaad3d9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-27 20:25:36</sys_updated_on><table>x_1902784_base_a_0_base_registration</table><ui_policy display_value="Mandatory Fields">5372b90283018f5027aba6d0deaad331</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=c65f087e8301c39027aba6d0deaad3d9"/></record_update>]]></payload>
+        <payload_hash>1737658077</payload_hash>
+        <record_name>latitude</record_name>
+        <reverted_from/>
+        <source>4490d7d28389039027aba6d0deaad378</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 20:25:36</sys_created_on>
+        <sys_id>b86f447e8301c39027aba6d0deaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e6b1d33ab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 20:25:36</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>b46f447ea101c390e3a11cba32e59395</update_guid>
+        <update_guid_history>b46f447ea101c390e3a11cba32e59395:1737658077</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 12:35:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>2c317b71c68540dc9c350d462fa54704</sys_id>
+        <sys_metadata>c65f087e8301c39027aba6d0deaad3d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>latitude</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_parent display_value="Mandatory Fields">5372b90283018f5027aba6d0deaad331</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_scope_delete display_value="">18a1bc8c9ca242a683ad5c0b6b372689</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_c65f087e8301c39027aba6d0deaad3d9</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_c65f087e8301c39027aba6d0deaad3d9">b86f447e8301c39027aba6d0deaad396</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 12:35:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

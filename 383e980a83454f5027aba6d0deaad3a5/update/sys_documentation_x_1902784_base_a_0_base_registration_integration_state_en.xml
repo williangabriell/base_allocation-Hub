@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="integration_state" label="Integration State" language="en" table="x_1902784_base_a_0_base_registration">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>integration_state</element>
+            <help/>
+            <hint/>
+            <label>Integration State</label>
+            <language>en</language>
+            <name>x_1902784_base_a_0_base_registration</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-28 14:30:19</sys_created_on>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>Integration State</sys_name>
+            <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+            <sys_update_name>sys_documentation_x_1902784_base_a_0_base_registration_integration_state_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-28 14:34:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

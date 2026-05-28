@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="e5d3418283894f5027aba6d0deaad3fb" label="Base Registration" max_length="40" name="x_1902784_base_a_0_base_registration" type="collection">
+        <element label="Integration Error Message" max_length="1000" name="integration_error_message" type="string"/>
+        <element choice="1" label="Integration State" max_length="40" name="integration_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Starting" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Integration Failure" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Integrating" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="City not Found" sequence="4" value="7"/>
+                <element inactive_on_update="false" label="Integration Sucess" sequence="2" value="3"/>
+            </choice>
+        </element>
         <element label="State" max_length="40" name="state" type="string"/>
         <element attributes="min_value=1" label="Max capacity" max_length="40" name="max_capacity" type="integer"/>
         <element label="Longitude" max_length="40" name="longitude" type="float"/>

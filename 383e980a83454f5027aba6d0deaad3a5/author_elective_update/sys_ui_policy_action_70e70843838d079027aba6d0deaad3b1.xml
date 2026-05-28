@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>state0</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 14:31:29</sys_created_on>
+        <sys_id>70e70843838d079027aba6d0deaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state0</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_ui_policy_action_70e70843838d079027aba6d0deaad3b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 14:31:29</sys_updated_on>
+        <table>x_1902784_base_a_0_base_registration</table>
+        <ui_policy display_value="Read Only fields">e78deb7e8389079027aba6d0deaad394</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=70e70843838d079027aba6d0deaad3b1"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</application>
+        <file_path/>
+        <instance_id>acb5df9afbd7dad0843df4344eefdc1d</instance_id>
+        <instance_name>dev292903</instance_name>
+        <name>sys_ui_policy_action_70e70843838d079027aba6d0deaad3b1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>state0</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-28 14:31:29</sys_created_on><sys_id>70e70843838d079027aba6d0deaad3b1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>state0</sys_name><sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package><sys_policy/><sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope><sys_update_name>sys_ui_policy_action_70e70843838d079027aba6d0deaad3b1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-28 14:31:29</sys_updated_on><table>x_1902784_base_a_0_base_registration</table><ui_policy display_value="Read Only fields">e78deb7e8389079027aba6d0deaad394</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=70e70843838d079027aba6d0deaad3b1"/></record_update>]]></payload>
+        <payload_hash>292186545</payload_hash>
+        <record_name>state0</record_name>
+        <reverted_from/>
+        <source>4490d7d28389039027aba6d0deaad378</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 14:31:29</sys_created_on>
+        <sys_id>9fe74843838d079027aba6d0deaad3ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e6eff5dab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 14:31:29</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>9be74843e98d0790f98f38572913bbee</update_guid>
+        <update_guid_history>9be74843e98d0790f98f38572913bbee:292186545</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 14:42:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>00f9cdd50c0f478c80041c0222b399e1</sys_id>
+        <sys_metadata>70e70843838d079027aba6d0deaad3b1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state0</sys_name>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_parent display_value="Read Only fields">e78deb7e8389079027aba6d0deaad394</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_scope_delete display_value="">18a1bc8c9ca242a683ad5c0b6b372689</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_70e70843838d079027aba6d0deaad3b1</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_70e70843838d079027aba6d0deaad3b1">9fe74843838d079027aba6d0deaad3ef</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 14:42:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
