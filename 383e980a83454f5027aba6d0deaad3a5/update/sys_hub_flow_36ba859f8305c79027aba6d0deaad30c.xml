@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1287000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>diary_weather_api_integration</internal_name>
+        <label_cache>[{"name":"subflow.base_record.base.city","label":"Input➛Base Record➛Base➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_1902784_base_a_0_base_registration","column_name":"city","usedInstances":{"b83b779c-65de-412a-9d4b-ce405f9acd5c":["city"]}},{"name":"subflow.base_record.base.state","label":"Input➛Base Record➛Base➛State","reference":"","reference_display":"State","type":"string","base_type":"string","parent_table_name":"x_1902784_base_a_0_base_registration","column_name":"state","usedInstances":{"b83b779c-65de-412a-9d4b-ce405f9acd5c":["state"]}},{"name":"subflow.base_record","label":"Input➛Base Record","reference":"x_1902784_base_a_0_base_allocation","reference_display":"Base Allocation","type":"reference","base_type":"reference","usedInstances":{"e8ebc14b-7f57-4460-b492-724281228516":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"984054d0-832e-4c02-8d73-7b05554c4af6","uiTypeLabel":"Reference"}},{"name":"b83b779c-65de-412a-9d4b-ce405f9acd5c.location.current_observation.condition.temperature","label":"1 - Yahoo Weather Integration➛Location➛current_observation➛condition➛temperature","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"e8ebc14b-7f57-4460-b492-724281228516":["temperature"]},"attributes":{}},{"name":"subflow.base_record.base","label":"Input➛Base Record➛Base","reference":"x_1902784_base_a_0_base_registration","reference_display":"Base Registration","type":"reference","base_type":"reference","parent_table_name":"x_1902784_base_a_0_base_allocation","column_name":"base","usedInstances":{"e8ebc14b-7f57-4460-b492-724281228516":["record"]}}]</label_cache>
+        <master_snapshot>19afc5d78345c79027aba6d0deaad369</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Diary Weather API Integration</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:01:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>36ba859f8305c79027aba6d0deaad30c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Diary Weather API Integration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name>sys_hub_flow_36ba859f8305c79027aba6d0deaad30c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:20</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=36ba859f8305c79027aba6d0deaad30c^sys_idNOT IN7eba859f8305c79027aba6d0deaad30c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>36ba859f8305c79027aba6d0deaad30c</id>
+        <name>Diary Weather API Integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:01:51</sys_created_on>
+        <sys_id>7eba859f8305c79027aba6d0deaad30c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:01:51</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7eba859f8305c79027aba6d0deaad30c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=36ba859f8305c79027aba6d0deaad30c^sys_idNOT IN74af85d78345c79027aba6d0deaad3ce"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=984054d0-832e-4c02-8d73-7b05554c4af6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1902784_base_a_0_base_allocation</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>base_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Base Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Diary Weather API Integration">36ba859f8305c79027aba6d0deaad30c</model>
+        <model_id>36ba859f8305c79027aba6d0deaad30c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_36ba859f8305c79027aba6d0deaad30c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1902784_base_a_0_base_allocation">x_1902784_base_a_0_base_allocation</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:17</sys_created_on>
+        <sys_id>74af85d78345c79027aba6d0deaad3ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=74af85d78345c79027aba6d0deaad3ce"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=36ba859f8305c79027aba6d0deaad30c^sys_idNOT IN85af85d78345c79027aba6d0deaad3eb,c1af85d78345c79027aba6d0deaad3ed"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Yahoo Weather Integration">b6ebb3ba830d079027aba6d0deaad335</action_type>
+        <action_type_parent display_value="Yahoo Weather Integration">112c6bba8389079027aba6d0deaad3b1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Diary Weather API Integration">36ba859f8305c79027aba6d0deaad30c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:18</sys_created_on>
+        <sys_id>85af85d78345c79027aba6d0deaad3eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:18</sys_updated_on>
+        <ui_id>b83b779c-65de-412a-9d4b-ce405f9acd5c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TTW/TQBD9L3u2Lcd2Ejs3BKqEBFSi0EtVWbO742al9dpdr9OGKP+dWX+kEISUIg4cuHlm5+O9N353B6Yk27AUkfOUQ57GMl4XcbIGDisZSwSQacpZwAzUSJVCuT1FO9C9Dw+HrueVbp4iDh2WFkVj5fAd+crjkWql6loN+9tXtIit0tKiYZu7+4C1YGm5Q8s2h7Mnt2+x1MBR0+QbZ5V5oPZLOc2Nb0dSP1P0oynq5qGE0iNYBAyfHRqJtKQC3WHAajASXGP3bONsTwmLIK+N3p8qtso4GsZ87XOnvtHkPI5jX1khsRE4vp7CclJtTIttowRet041Zsw44HrqEY3ua/NpBO/1xgp67Wa9KdOTzhJbD9rDmDBVN9vm6fO88EqZgd/0qBsB+hSBIxV477DzJ+jVF9Lmw7nqqLGm+WUNbUuZsrXNTg0zCWIdPWgKIn94wtKpBxOB8Hwikg6iK8q/G9K3YJUn95HGUHMwrfvxFL36atRjj+/9nXNYVrEo4jApVlWYLWIe5kUCIfJiKao8yVaYsuMgbfnYe1KjSJMc5agoFXTCqta9IVA7nJgfg8kga1lllch5nopF9svPlC9f/p7OgcPLHDKUvtIiLz1/wyMX0JobZ15nNH/jkuS/S/4tl8QCqrSANEyyBYYZinUIQvBQiiVfZ3T5OM/+2CX33wHcuCyXSAYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=85af85d78345c79027aba6d0deaad3eb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Diary Weather API Integration">36ba859f8305c79027aba6d0deaad30c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:18</sys_created_on>
+        <sys_id>c1af85d78345c79027aba6d0deaad3ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:18</sys_updated_on>
+        <ui_id>e8ebc14b-7f57-4460-b492-724281228516</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K8XPibFjJ03ytlECe1gL3ehLV8S1dJMKZNmT5bRZyH/flSyn6ce6UsLGYH6yru7HOfceSdfbSIpoHuUoknSWTniWZtkoSUbTPC0mWZGORAaIaTSINJRIngZ5ZQSt16BaZ9hum7ZYquouLqBB1u37/92O3IRsagWbq+BNFn4rlTCoo/n1zSCqwVBiiyaab59s2U2NTEGBigLPKt6WqO3JpzPK8VbQffRlj/opC1eD1iJkZ9IZacvhSZNBhPcWtUAqtwTV4CAqQQuwldlEc2taMhgEcaHVZu9xK7XtmJZw38gflD9PnN8SiRoPXdgvWehQ35xKcryorax0Z7FQqL5zlWpLfd5RcL3FJbTKHvS2pQkIrB1kB6JDuPxyW91d9vUWUnt2Aa2qOKj9Cqw1smgtNm4cqNA3pYS6lnrFalOtpQ8mKGW8UrSI3eipZiNXOgbucMfUIIgXZD/z5isw0pH4TGkoeOfJs++tq9vRCICZ5+wJMz8ocm24kbX9QInXGGDuBkG1xfg1AfDZw7wPcj4o956ls2R0Os2ZVy6whAUJr2RjDfgZPFPwR3J5t4q/Ohwn5x2Ot3J4FPwLTkHHj2xBxuOjyXj6l2QcEP1jOv6depPRq9fXwaS9YJsD5VosCQHY1uC3Nkkysd0W06w4PZ3x4WQscJinIxjORF4MOebJeDkDLsY8dk3yzHhrjAdaNGjWwVZpIf3fQfqX7vA/XP2dJ42yKLB40qEevLnnfYKFRCWaF4bQH7VQgK1Dgf2rcbTzlk4S//1/PI74eNz8BF9v5Nn0CAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c1af85d78345c79027aba6d0deaad3ed"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>base_record</element>
+        <help/>
+        <hint/>
+        <label>Base Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_36ba859f8305c79027aba6d0deaad30c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:17</sys_created_on>
+        <sys_id>01af85d78345c79027aba6d0deaad3d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>diary_weather_api_integration</internal_name>
+        <label_cache>[{"name":"subflow.base_record.base.city","label":"Input➛Base Record➛Base➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_1902784_base_a_0_base_registration","column_name":"city","usedInstances":{"b83b779c-65de-412a-9d4b-ce405f9acd5c":["city"]}},{"name":"subflow.base_record.base.state","label":"Input➛Base Record➛Base➛State","reference":"","reference_display":"State","type":"string","base_type":"string","parent_table_name":"x_1902784_base_a_0_base_registration","column_name":"state","usedInstances":{"b83b779c-65de-412a-9d4b-ce405f9acd5c":["state"]}},{"name":"subflow.base_record","label":"Input➛Base Record","reference":"x_1902784_base_a_0_base_allocation","reference_display":"Base Allocation","type":"reference","base_type":"reference","usedInstances":{"e8ebc14b-7f57-4460-b492-724281228516":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"984054d0-832e-4c02-8d73-7b05554c4af6","uiTypeLabel":"Reference"}},{"name":"b83b779c-65de-412a-9d4b-ce405f9acd5c.location.current_observation.condition.temperature","label":"1 - Yahoo Weather Integration➛Location➛current_observation➛condition➛temperature","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"e8ebc14b-7f57-4460-b492-724281228516":["temperature"]},"attributes":{}},{"name":"subflow.base_record.base","label":"Input➛Base Record➛Base","reference":"x_1902784_base_a_0_base_registration","reference_display":"Base Registration","type":"reference","base_type":"reference","parent_table_name":"x_1902784_base_a_0_base_allocation","column_name":"base","usedInstances":{"e8ebc14b-7f57-4460-b492-724281228516":["record"]}}]</label_cache>
+        <master>true</master>
+        <name>Diary Weather API Integration</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Diary Weather API Integration">36ba859f8305c79027aba6d0deaad30c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>19afc5d78345c79027aba6d0deaad369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:19</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_variable_value action="delete_multiple" query="document_key=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=19afc5d78345c79027aba6d0deaad369^sys_idNOT INd9afc5d78345c79027aba6d0deaad36a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>19afc5d78345c79027aba6d0deaad369</id>
+        <name>Diary Weather API Integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:19</sys_created_on>
+        <sys_id>d9afc5d78345c79027aba6d0deaad36a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d9afc5d78345c79027aba6d0deaad36a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=19afc5d78345c79027aba6d0deaad369^sys_idNOT INd9afc5d78345c79027aba6d0deaad36c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=984054d0-832e-4c02-8d73-7b05554c4af6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1902784_base_a_0_base_allocation</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>base_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Base Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Diary Weather API Integration">19afc5d78345c79027aba6d0deaad369</model>
+        <model_id>19afc5d78345c79027aba6d0deaad369</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_19afc5d78345c79027aba6d0deaad369</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1902784_base_a_0_base_allocation">x_1902784_base_a_0_base_allocation</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:19</sys_created_on>
+        <sys_id>d9afc5d78345c79027aba6d0deaad36c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d9afc5d78345c79027aba6d0deaad36c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=19afc5d78345c79027aba6d0deaad369^sys_idNOT INa5afc5d78345c79027aba6d0deaad397,e1afc5d78345c79027aba6d0deaad399"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Yahoo Weather Integration">b6ebb3ba830d079027aba6d0deaad335</action_type>
+        <action_type_parent display_value="Yahoo Weather Integration">112c6bba8389079027aba6d0deaad3b1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>b6ebb3ba830d079027aba6d0deaad335</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Diary Weather API Integration">19afc5d78345c79027aba6d0deaad369</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:19</sys_created_on>
+        <sys_id>a5afc5d78345c79027aba6d0deaad397</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:19</sys_updated_on>
+        <ui_id>b83b779c-65de-412a-9d4b-ce405f9acd5c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TTW/bMAz9LzrHhmM7iZ1bkaLAgG0F1q2XojAoiU4EyB+V5LZZkP8+KraTLb0kwE7DbiL1KL73RD7tmJJsyRJEzhMOWRLJaJFH8QI4zGUkEUAmCWcTVkOFhBTKbSl6Bd35cLezHS918xZysFgYFI2Rh3Pokfs9YaWyrYbt4xUlYqO0NFiz5dPzhLVgqLlDw5a7s6tL2WvgqAm66un/KcZtWx9ZZ1S9HuLPQ8HDmCSSnsB0wvDdYS2ROpegLU5YBbUE15gtWzrTUcIgyPtab4+IjaodPcY89t2qn9Qui6LII0skMQL722NYDKb16fIWHBCTTrjODFCxaZRA29sgsYROu9XvuR5w3zrV1H2JA67H6kZ3Vf21t4EdHxj/iDId/Y3E1iv13Ach5cOmefs2srxT9cGU4VI3AvQxAkfW8c55PjvWqe9nLveZDz6jxoo6FhW0LWWK1jSv6tCFSFfhWlMQ+vEhdlat6xCEVxjSD0B4R/nbQ/oRjPJyv9AzVOzb/ajVS4ef/MRkMCsjkUdBnM/LIJ1GPMjyGALk+UyUWZzOMWH7CbNbu9Jg7cko+qHipfMye9sGg4reY18ijGrdDZF6xcGL/WRYs4Us01JkPEvENP0wqNnsNJnWgcPL9uwAvXLRTjXXbdoFAsZNGxWcCbpm1+L/u/YP7FokoExySII4nWKQolgEIAQPpJjxRUozFGXpX9y151/kNWj81AYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a5afc5d78345c79027aba6d0deaad397"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Diary Weather API Integration">19afc5d78345c79027aba6d0deaad369</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:20</sys_created_on>
+        <sys_id>e1afc5d78345c79027aba6d0deaad399</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:20</sys_updated_on>
+        <ui_id>e8ebc14b-7f57-4460-b492-724281228516</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0XPibFjJ03ytjUUBl0L7ehLV8y1dJ0I5I9JctrM5L9PkuXUtKVroQzC8uT7qXOP7onuWsIZWZIEWRgtohmNoziehOFknkTZLM6iCYsBMSIjUkKBJlMirSQz9hZEYx1tq5osF9VDkIHCtIu77/3epDGuagG7W59tPHTDBZNYkuXd/YjUIE1jjZIs22eh9yITkKEwqdc9tOdQ9a62NqtoU2CpU947L3zlykdOvq1MxBRZOFE4IviosWRogOQgFI5IASUDXckdWWrZGIdEYFel2B0yNrzU3aAFPCr+25ychDYvRzMZ9SQczNQT1LnzFWi4MZ2pbuSBr4pTVB0nDHNohD4b+rqEq1rzquxKNGSir65EU5SXHSPk0GBwH425NYa1ndMi78bKbzbVw3UP8pyXjhI/oqgoiIMFWkueNdrCaQkKdBwXUNe8XKe1rLbcFRsoRbAWxgjsupgzFV+XAVCLOzCsQnBu/CvnvgXJ7RDfTRtTvB8RtVNnApR6GsVwmP5qLJJuMD9C6lhwFKRuE2wxlbzWX8xRW/TA9yO/+9n0rQ2ji6eFGvR82v/HNFqEk9N5krr9hzRMvRDWXGkJ7lZe6OCrSfmwFt6BtNfCD7cBryP3cnjhuxjWnlx2AS+G6aeJYX5MYvBjHL0a/qaBcPLmv+xgk9zaq8H+aywMJrBX9LMJw5i1bTaPs9PTBR3PpgzHSTSB8YIl2ZhiEk7zBVA2pYGlzc1KGykd0Eyh3HpfVTLuvgbtX3tP/vHpH9PrO1jt9XrOUTD1Cs29WA0QARrTjvZngvXBk1sfPLxgn6baaBa63xFp9795yO7/AOrMeOfGCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e1afc5d78345c79027aba6d0deaad399"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=19afc5d78345c79027aba6d0deaad369"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>base_record</element>
+        <help/>
+        <hint/>
+        <label>Base Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_19afc5d78345c79027aba6d0deaad369</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:19</sys_created_on>
+        <sys_id>adafc5d78345c79027aba6d0deaad37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Base Allocation Hub" source="x_1902784_base_a_0">383e980a83454f5027aba6d0deaad3a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Base Allocation Hub">383e980a83454f5027aba6d0deaad3a5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_19afc5d78345c79027aba6d0deaad369"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_19afc5d78345c79027aba6d0deaad369"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>36ba859f8305c79027aba6d0deaad30c</sys_id>
+        <latest_snapshot>19afc5d78345c79027aba6d0deaad369</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=36ba859f8305c79027aba6d0deaad30c"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=36ba859f8305c79027aba6d0deaad30c^sys_idNOT IN6dafc5d78345c79027aba6d0deaad3c8"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@3aecf66a</plan>
+        <plan_id display_value="Diary Weather API Integration">36ba859f8305c79027aba6d0deaad30c</plan_id>
+        <snapshot>19afc5d78345c79027aba6d0deaad369</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 14:23:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6dafc5d78345c79027aba6d0deaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 14:23:20</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
